@@ -32,6 +32,9 @@ body {
     margin: 0;
 }
 
+.visually-hidden {
+    display: none;
+}
 .navigaton ul {
     list-style: none;
 }
@@ -54,30 +57,42 @@ body {
 }
 
 .search-link {
-    padding: 8px 8px 8px 8px;
+    background: rgba(252, 252, 252, 0.3);
+    background-image: url("images/Search.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 27px;
-    background-image: url("image/search.svg");
-
+    padding: 8px 16px 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .login-link {
     font-size: 14px;
     line-height: 20px;
-    padding: 6px, 16px, 6px, 16px;
+    padding: 6px 16px 6px 38px;
     border-radius: 30px;
     color: #2D3440;
     text-decoration: none;
-    background-color: #FFCBD8;
-
+    background: rgba(252, 252, 252, 0.3);
+    background-image: url("images/Log-in.svg");
+    background-position: 16px 8px;
+    background-repeat: no-repeat;
+    text-align: right;
 }
 
 .cart-link {
     font-size: 14px;
     line-height: 20px;
+    padding: 6px 16px 6px 38px;
     border-radius: 30px;
     color: #2D3440;
     text-decoration: none;
-    background-color: #FFCBD8;
+    background: rgba(252, 252, 252, 0.3);
+    background-image: url("images/Cart.svg");
+    background-position: 16px 8px;
+    background-repeat: no-repeat;
+    text-align: right;
 }
 
 h1 {
@@ -137,6 +152,7 @@ p {
 }
 
 .button {
+    background: #FCFCFC;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -149,7 +165,7 @@ p {
     border-color: rgba(252, 252, 252, 0.4);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
-    background: #FCFCFC;
+
 }
 
 .mainpage-top-slider-images li {
@@ -160,15 +176,64 @@ p {
     list-style: none;
 }
 
-.mainpage-special-offering-list li {
+.mainpage-top-slider-button-prev input[type="radio"] {
+    background-image: url("images/Arrow-right.svg");
+    appearance: none;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid #FCFCFC;
+    border-radius: 26px;
+    padding: 11px;
+}
+
+.slider-pagination input[type="radio"] {
+    appearance: none;
+    background: rgba(252, 252, 252, 0.3);
+    border-radius: 100px;
+    width: 12px;
+    height: 12px;
+}
+
+.current .slider-pagination {
+    background: rgba(252, 252, 252, 1)
+}
+
+.mainpage-top-slider-button-next input[type="radio"] {
+    appearance: none;
+    background-image: url("images/Arrow-right.svg");
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid #FCFCFC;
+    border-radius: 26px;
+    padding: 11px;
+}
+
+.mainpage-special-offering h2 {
+    text-align: center;
+}
+.mainpage-special-offering-list {
     list-style: none;
     background: #FF7799;
     border-radius: 16px;
-    background-image: url("../image/Raspberry-gift.png");
+    width: 570px;
 }
 
-.mainpage-special-offering-item-1 li {
+.mainpage-special-offering-item-1 {
+    background-image: url("images/Raspberry-gift.png");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    height: 268px;
+}
 
+.mainpage-special-offering-item-2 {
+    background-image: url("images/marshmallow-gift.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 268px;
 }
 
 .mainpage-special-offering-list p {
@@ -211,5 +276,14 @@ p {
 .button-add-to-cart {
     background: #FF2F64;
     border-radius: 26px;
-    background-image: url("image/cart.svg");
+    background-image: url("images/Cart.svg");
+}
+
+.mainpage-advantades-wrapper {
+    width: 1170px;
+    height: 480px;
+    background-image: url("images/waffel-background.png");
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
 }
