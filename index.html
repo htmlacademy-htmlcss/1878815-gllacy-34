@@ -67,7 +67,7 @@
 						<img class="slider-image" src="images/Caramel-mainpage-slider-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 					</li>
 				</ul>
-				<a class="button button-order" href="#">Заказать</a>
+				<a class="button-general button-order" href="#">Заказать</a>
 			</div>
 			<div class="mainpage-top-slider-slide-2">
 				<h3 class="mainpage-top-slider-slide-title current">Сливочное мороженое со вкусом банана</h3>
@@ -83,7 +83,7 @@
 						<img class="slider-image" src="images/Strawberry-mainpage-2.png" width="66" height="150" alt="Нежный пломбир с клубничным джемом">
 					</li>
 				</ul>
-				<a class="button button-order" href="#">Заказать</a>
+				<a class="button-general button-order" href="#">Заказать</a>
 			</div>
 			<div class="mainpage-top-slider-slide-3">
 				<h3 class="mainpage-top-slider-slide-title current">Карамельный пломбир с маршмеллоу</h3>
@@ -99,7 +99,7 @@
 						<img class="slider-image" src="images/Caramel-mainpage-slider-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 					</li>
 				</ul>
-				<a class="button button-order" href="#">Заказать</a>
+				<a class="button-general button-order" href="#">Заказать</a>
 			</div>
 			<div class="mainpage-top-slider-button-prev">
 				<input type="radio" id="mainpage-top-slider-button-prev" class="mainpage-top-slider-button-prev button">
@@ -111,7 +111,7 @@
 			</div>
 			<div class="slider-pagination">
 				<input type="radio" class="slider-pagination-item current" id="slider-pagination-item-current" checked>
-				<label for="slider-pagination-item-current" class="visually-hidden">Слайд 1</label>
+				<label for="slider-pagination-item current" class="visually-hidden">Слайд 1</label>
 				<input type="radio" class="slider-pagination-item" id="slider-pagination-item-2">
 				<label for="slider-pagination-item-2" class="visually-hidden">Слайд 2</label>
 				<input type="radio" class="slider-pagination-item" id="slider-pagination-item-3">
@@ -138,15 +138,15 @@
 		<section class="mainpage-special-offering">
 			<h2>Заказывайте мороженое и получайте подарки!</h2>
 			<ul class="mainpage-special-offering-list">
-				<li class="mainpage-special-offering-item-1">
-					<b>Малинка даром!</b>
-					<p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="button button-gift" href="#">Хочу подарок</a>
+				<li class="mainpage-special-offering-item gift-raspberry">
+					<b class="mainpage-special-offering-item-name">Малинка даром!</b>
+					<p class="mainpage-special-offering-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<a class="button-general button-gift" href="#">Хочу подарок</a>
 				</li>
-				<li class="mainpage-special-offering-item-2">
-					<b>Маршмеллоу даром!</b>
-					<p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-					<a class="button button-gift" href="#">Хочу подарок</a>
+				<li class="mainpage-special-offering-item gift-marshmallow">
+					<b class="mainpage-special-offering-item-name">Маршмеллоу даром!</b>
+					<p class="mainpage-special-offering-item-description"></p>>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+					<a class="button-general button-gift" href="#">Хочу подарок</a>
 				</li>
 			</ul>
 		</section>
@@ -243,7 +243,7 @@
 					<form class="subscribe">
 						<label class="form-label" for="subscribe-email"><span class="visually-hidden">Ваш имейл</span></label>
 							<input type="email" class="field" id="subscribe-email" name="subscribe-email" placeholder="email@example.com">
-						<button class="button submit" type="submit">Отправить</button>
+						<button class="button-additional-light submit" type="submit">Отправить</button>
 					</form>
 				</div>
 			</article>
@@ -264,18 +264,18 @@
 					<label for="delivery-adress">Адрес</label><img src="images/info.svg" width="12.42" height="12.42" alt="дополнительная информация">
 					<input class="field" type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
 				</p>
-				<button class="button submit" type="submit">Отправить</button>
+				<button class="bbutton-additional-light submit" type="submit">Отправить</button>
 			</form>
 		</section>
 		<section class="mainpage-address">
 			<h2 class="visually-hidden">Контакты</h2>
 			<address class="mainpage-address">
             	<p>Адрес главного офиса и офлайн-магазина:</p>
-            	<b>наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
+            	<b class="office-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
             	<p>Для заказов по телефону:</p>
             	<a class="mainpage-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             	<p class="adress-note">(с 10 до 20 ежедневно)</p>
-            	<a class="feedback-form-button button submit" href="#">Форма обратной связи</a>
+            	<a class="feedback-form-button button-additional-light" href="#">Форма обратной связи</a>
           </address>
 		</section>
 	</main>
@@ -302,18 +302,18 @@
 				<a class="mainpage-footer-links-item" href="#">Для поставщиков</a>
 			</li>
 			<li class="mainpage-footer-links-item">
-				<a href="#">Наши документы</a>
+				<a class="mainpage-footer-links-item" href="#">Наши документы</a>
 			</li>
 			<li class="mainpage-footer-links-item">
-				<a href="#">О производстве</a>
+				<a class="mainpage-footer-links-item" href="#">О производстве</a>
 			</li>
 			<li class="mainpage-footer-links-item">
-				<a href="#">Экологические стандарты</a>
+				<a class="mainpage-footer-links-item" href="#">Экологические стандарты</a>
 			</li>
 		</ul>
 		<div class="footer-copyright">
 			<a href="https://htmlacademy.ru/"><img class="footer-copyright-logo" src="images/logo_htmlacademy.svg" width="93" height="26.71" alt="логотип HTML-Academy"></a>
-			<a href="https://htmlacademy.ru/">Сделано в .html academy © 2021</a>
+			<a class="footer-copyright-caption" href="https://htmlacademy.ru/">Сделано в .html academy © 2021</a>
 		</div>
 	</footer>
 </body>
