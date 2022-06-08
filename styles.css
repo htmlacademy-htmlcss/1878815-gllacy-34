@@ -32,6 +32,120 @@ body {
     margin: 0;
 }
 
+/* start - general text styles from the styleguide - start */ 
+
+.style-header-1 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.style-header-2 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.style-header-3 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2D3440;
+}
+
+.style-header-4 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;  
+}
+
+.style-header-5 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2D3440;
+}
+
+.style-paragraph-1 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D3440;
+}
+
+.style-paragraph-2 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+.style-paragraph-3 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-paragraph-bold {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-caption-1 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-caption-bold {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-caption-2 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #565C66;
+}
+
+/* end - general button styles from the styleguide - end */
+
+/* start - general button styles from the styleguide - start */
+
 .button-general {
     background: #FCFCFC;
     border: 4px solid rgba(252, 252, 252);
@@ -78,6 +192,8 @@ body {
     padding: 12px 32px;
 }
 
+/* end - general button styles from the styleguide - end */
+
 .visually-hidden {
     visibility: hidden;
 }
@@ -87,10 +203,6 @@ body {
 }
 
 .navigation-link {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
     color: #2D3440;
     text-decoration: none;
 }
@@ -99,15 +211,10 @@ body {
     padding: 8px 16px;
     background: #FF4A78;
     border-radius: 30px;
-    font-size: 16px;
-    line-height: 20px;
     color: #FCFCFC;
 }
 
 .contact-phone {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
     color: #2D3440;
     text-decoration: none;
 }
@@ -118,37 +225,30 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 27px;
-    padding: 8px 16px 8px 16px;
-    font-size: 14px;
-    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
 }
 
 .login-link {
-    font-size: 14px;
-    line-height: 20px;
     padding: 6px 16px 6px 38px;
     border-radius: 30px;
-    color: #2D3440;
-    text-decoration: none;
     background: rgba(252, 252, 252, 0.3);
     background-image: url("images/Log-in.svg");
     background-position: 16px 8px;
     background-repeat: no-repeat;
-    text-align: right;
+    color: #2D3440;
+    text-decoration: none;
 }
 
 .cart-link {
-    font-size: 14px;
-    line-height: 20px;
     padding: 6px 16px 6px 38px;
     border-radius: 30px;
-    color: #2D3440;
-    text-decoration: none;
     background: rgba(252, 252, 252, 0.3);
     background-image: url("images/Cart.svg");
     background-position: 16px 8px;
     background-repeat: no-repeat;
-    text-align: right;
+    color: #2D3440;
+    text-decoration: none;
 }
 
 .mainpage-top-slider-images li {
@@ -198,9 +298,6 @@ body {
     background: rgba(252, 252, 252, 1)
 }
 
-.mainpage-special-offering h2 {
-    text-align: center;
-}
 .mainpage-special-offering-list {
     list-style: none;
     background: #FF7799;
@@ -222,10 +319,8 @@ body {
     background-image: url("images/marshmallow-gift.png");
 }
 
-.mainpage-special-offering-list p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+.mainpage-special-offering-item-description {
+    color: #2D3440;
 }
 
 .products-list {
@@ -240,24 +335,6 @@ body {
 .products-list-item-image {
     width: 168px;
     height: 168px;
-}
-
-.products-list-item-name {
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.products-list-item-description {
-    font-size: 16px;
-    line-height: 22px;
-    color: #565C66;
-}
-
-.price {
-    font-family: "Inter", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
 }
 
 .button-add-to-cart {
@@ -277,12 +354,6 @@ body {
 .mainpage-advantades-wrapper {
     background: #FFFFFF;
     border-radius: 16px;
-}
-
-.mainpage-about-advantades-list {
-    font-size: 16px;
-    line-height: 22px;
-    color: #565C66;
 }
 
 .technologies {
@@ -320,9 +391,6 @@ body {
 .main-page-subscribe-email-wrapper {
     background: #FFFFFF;
     border-radius: 16px;
-    font-size: 16px;
-    line-height: 22px;
-    color: #565C66;
 }
 
 .field {
@@ -346,11 +414,6 @@ body {
 }
 
 .delivery-form {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #565C66;
     background: #FCFCFC;
     box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
@@ -364,37 +427,14 @@ section.mainpage-address {
     height: 492px;
 }
 
-address.mainpage-address {
+.form-label.style-paragraph-bold {
+    color: #2D3440;
+}
+
+.mainpage-address address{
     background: #FCFCFC;
     box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #565C66;
-}
-
-.office-address {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #2D3440;
-}
-
-.mainpage-address-phone {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #2D3440;
-    text-decoration: none;
-}
-
-.adress-note {
-    font-size: 14px;
-    line-height: 20px;
 }
 
 .page-footer {
@@ -406,8 +446,6 @@ address.mainpage-address {
 }
 
 .mainpage-footer-links-item {
-    font-size: 14px;
-    line-height: 20px;
     text-decoration: none;
     color: #2D3440;
 }
@@ -418,18 +456,12 @@ address.mainpage-address {
 }
 
 .footer-copyright-caption {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
     text-decoration: none;
     color: #2D3440;
 }
 
 .breadcrump-menu-item {
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
     text-decoration: none;
     color: #2D3440;
 }
@@ -439,14 +471,13 @@ address.mainpage-address {
 }
 
 .catalog-filters {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    color: #2D3440;
 }
 
 .catalog-filters select, 
 .catalog-price, 
 .catalog-filter-list {
+    color: #2D3440;
     background: rgba(252, 252, 252,0.3);
     border-radius: 20px;
     border-width: 0px;
