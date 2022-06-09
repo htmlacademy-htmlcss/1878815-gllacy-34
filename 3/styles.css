@@ -1,0 +1,534 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D3440;
+    background-color: #FEAFC3;
+    margin: 0;
+}
+
+/* start - general text styles from the styleguide - start */ 
+
+.style-header-1 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.style-header-2 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.style-header-3 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2D3440;
+}
+
+.style-header-4 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;  
+}
+
+.style-header-5 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2D3440;
+}
+
+.style-paragraph-1 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D3440;
+}
+
+.style-paragraph-2 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+.style-paragraph-3 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-paragraph-bold {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-caption-1 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-caption-bold {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.style-caption-2 {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #565C66;
+}
+
+/* end - general button styles from the styleguide - end */
+
+/* start - general button styles from the styleguide - start */
+
+.button-general {
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #2D3440;
+    text-decoration: none;
+    padding: 12px 32px;
+}
+
+.button-additional-light {
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FCFCFC;
+    text-decoration: none;
+    padding: 12px 32px;
+}
+
+.button-additional-bright {
+    background: rgba(252, 252, 252, 0.3);    
+    border: 2px solid #FCFCFC;
+    border-radius: 20px;
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+    padding: 12px 32px;
+}
+
+/* end - general button styles from the styleguide - end */
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.navigaton ul {
+    list-style: none;
+}
+
+.navigation-link {
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.navigation-link.current {
+    padding: 8px 16px;
+    background: #FF4A78;
+    border-radius: 30px;
+    color: #FCFCFC;
+}
+
+.contact-phone {
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.search-link {
+    background: rgba(252, 252, 252, 0.3);
+    background-image: url("images/Search.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 27px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.login-link {
+    padding: 6px 16px 6px 38px;
+    border-radius: 30px;
+    background: rgba(252, 252, 252, 0.3);
+    background-image: url("images/Log-in.svg");
+    background-position: 16px 8px;
+    background-repeat: no-repeat;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.cart-link {
+    padding: 6px 16px 6px 38px;
+    border-radius: 30px;
+    background: rgba(252, 252, 252, 0.3);
+    background-image: url("images/Cart.svg");
+    background-position: 16px 8px;
+    background-repeat: no-repeat;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.mainpage-top-slider-images li {
+    list-style: none;
+}
+
+.mainpage-social li {
+    list-style: none;
+}
+
+.mainpage-top-slider-button-prev input[type="radio"] {
+    background-image: url("images/Arrow-left.svg");
+    appearance: none;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid #FCFCFC;
+    border-radius: 26px;
+    padding: 11px;
+    cursor: pointer;
+}
+
+.mainpage-top-slider-button-next input[type="radio"] {
+    appearance: none;
+    background-image: url("images/Arrow-right.svg");
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid #FCFCFC;
+    border-radius: 26px;
+    padding: 11px;
+    cursor: pointer;
+}
+
+.slider-pagination-item {
+    appearance: none;
+    background: rgba(252, 252, 252, 0.3);
+    border-radius: 100px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.slider-pagination-item .current {
+    background: rgba(252, 252, 252, 1)
+}
+
+.mainpage-special-offering-list {
+    list-style: none;
+    background: #FF7799;
+    border-radius: 16px;
+    width: 570px;
+}
+
+.mainpage-special-offering-item {
+    background-position: 100%;
+    background-repeat: no-repeat;
+    height: 268px;
+}
+
+.gift-raspberry {
+    background-image: url("images/Raspberry-gift.png");
+}
+
+.gift-marshmallow {
+    background-image: url("images/marshmallow-gift.png");
+}
+
+.mainpage-special-offering-item-description {
+    color: #2D3440;
+}
+
+.products-list {
+    list-style: none;
+}
+
+.products-list-item {
+    background: #FCFCFC;
+    border-radius: 8px;
+}
+
+.products-list-item-image {
+    width: 168px;
+    height: 168px;
+}
+
+.button-add-to-cart {
+    background: #FF2F64;
+    border-radius: 26px;
+    background-image: url("images/Cart.svg");
+    background-repeat: no-repeat;
+}
+
+.mainpage-advantades {
+    width: 1170px;
+    height: 480px;
+    background-image: url("images/waffel-background.png");
+    border-radius: 16px;
+}
+
+.mainpage-advantades-wrapper {
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.technologies {
+    list-style-image: url("images/ice-cream.svg");
+}
+
+.quality {
+    list-style-image: url("images/leaf.svg");
+}
+
+.ingredients {
+    list-style-image: url("images/cow.svg");
+}
+
+.delivery {
+    list-style-image: url("images/thermometer.svg");
+}
+
+.main-page-article-preview {
+    background-image: url("images/news.jpg");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    width: 570px;
+    height: 224px;
+}
+
+.main-page-subscribe-email {
+    background-image: url("images/subscribe.png");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    width: 570px;
+    height: 224px;
+}
+
+.main-page-subscribe-email-wrapper {
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.field {
+    background: #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B9B9B9;
+    border-radius: 4px;
+    padding: 14px 16px 14px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.maimpage-delivery {
+    background-image: url("images/delivery.jpg");
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 492px;
+    border-radius: 16px;
+}
+
+.delivery-form {
+    background: #FCFCFC;
+    box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
+}
+
+section.mainpage-address {
+    background-image: url("images/contacts.jpg");
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 492px;
+}
+
+.form-label.style-paragraph-bold {
+    color: #2D3440;
+}
+
+.mainpage-address address{
+    background: #FCFCFC;
+    box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
+}
+
+.page-footer {
+    border-top: 1px solid rgba(252, 252, 252, 0.3);
+}
+
+.mainpage-footer-links {
+    list-style: none;
+}
+
+.mainpage-footer-links-item {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.mainpage-footer-links-item-highlight {
+    list-style-image: url("images/Heart-fill.svg");
+    font-weight: 700;
+}
+
+.footer-copyright-caption {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.breadcrump-menu-item {
+    font-style: normal;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.breadcrump-menu .current {
+    text-decoration: underline;
+}
+
+.catalog-filters {
+    color: #2D3440;
+}
+
+.catalog-filters select, 
+.catalog-price, 
+.catalog-filter-list {
+    color: #2D3440;
+    background: rgba(252, 252, 252,0.3);
+    border-radius: 20px;
+    border-width: 0px;
+    height: 36px;
+}
+
+.catalog-filter-item {
+    list-style: none;
+}
+
+.catalog-pagination-item {
+    list-style: none;
+}
+
+.catalog-pagination-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.pagination-current {
+    background: #FCFCFC;
+    border-radius: 76px;
+    padding: 2px 8px;
+}
+
+.catalog-pagination-prev {
+    background-image: url("images/Arrow-left.svg");
+}
+
+.catalog-pagination-next {
+    background-image: url("images/Arrow-right.svg");
+}
+
+.mainpage-social {
+    list-style: none;
+}
+
+.button-social-vk {
+    background-image: url("images/vk.svg");
+    background-repeat: no-repeat;
+}
+
+.button-social-tg {
+    background-image: url("images/telegram.svg");
+    background-repeat: no-repeat;
+}
+
+.button-social-yt {
+    background-image: url("images/youtube.svg");
+    background-repeat: no-repeat;
+}
