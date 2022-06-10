@@ -15,7 +15,10 @@
 		<nav class="navigaton">
 			<ul class="navigation-list style-p3">
 				<li class="navigation-item logo">
-					<a class="navigation-link" href="index.html">Главная страница</a>
+					<a class="navigation-link" href="index.html">
+						<span class="visually-hidden">Главная страница</span>
+						<img src="images/Logo.svg" alt="Главная" width="137px" height="55.72px">
+					</a>
 				</li>
 				<li class="navigation-item">
 					<a class="navigation-link current" href="catalog.html">Каталог</a>
@@ -50,9 +53,9 @@
 	<main class="main-catalog main-container">
 		<h1 class="visually-hidden">Каталог продукции онлайн и офлайн магазина мороженого Glacy Shop</h1>
 		<section class="catalog">
-			<div class="breadcrump-menu">
-				<a class="breadcrump-menu-item style-pb" href="index.html">Главная</a>
-				<a class="breadcrump-menu-item style-pb current" href="catalog.html">Каталог</a>
+			<div class="breadcrumb-menu">
+				<a class="breadcrumb-menu-item style-pb" href="index.html">Главная</a>
+				<a class="breadcrumb-menu-item style-pb current" href="catalog.html">Каталог</a>
 			</div>
 			<h2 class="style-h2">Сливочное мороженое</h2>
 			<div class="filters-wrapper">
@@ -72,24 +75,24 @@
 						<ul class="fat-list">
 							<li class="filter-item">
 								<input class="control-input" type="radio" name="fat" value="0%" id="fat-0">
-								<label class="style-c2" for="fat-0" class="control">0%</label>
+								<label class="style-c2 control" for="fat-0">0%</label>
 							</li>
 							<li class="filter-item">
 								<input class="control-input" type="radio" name="fat" value="до 10%" id="fat-less-10" checked>
-								<label class="style-c2" for="fat-less-10" class="control">до 10%</label>
+								<label class="style-c2 control" for="fat-less-10">до 10%</label>
 							</li>
 							<li class="filter-item">
 								<input class="control-input" type="radio" name="fat" value="до 30%" id="fat-less-30">
-								<label class="style-c2" for="fat-less-30" class="control">до 30%</label>
+								<label class="style-c2 control" for="fat-less-30">до 30%</label>
 							</li>
 							<li class="filter-item">
 								<input class="control-input" type="radio" name="fat" value="свыше 30%" id="fat-more-30">
-								<label class="style-c2" for="fat-more-30" class="control">свыше 30%</label>
+								<label class="style-c2 control" for="fat-more-30">свыше 30%</label>
 							</li>
 						</ul>
 					</div>
 					<div class="filter-filling style-c2">
-						<label class="filter-title" class="catalog-filter-title">Наполнители:</label>
+						<label class="filter-title">Наполнители:</label>
 						<ul class="filling-list">
 							<li class="filter-item">
 								<input class="control-input" type="checkbox" name="choco-filling" id="choco-filling" checked>
@@ -119,154 +122,169 @@
 			<div class="products-list">
 				<ul class="products-list">
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Raspberry-product-list.png" width="168" height="168" alt="Малинка">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Малинка</h3>
-								<p class="products-list-item-description">Сливочное мороженое с малиновым джемом</p>
+						<img class="product-image" src="images/Raspberry-product-list.png" width="168" height="168" alt="Малинка">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Малинка</h3>
+								<p class="product-description style-p2">Сливочное мороженое с малиновым джемом</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">310 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
+							<div class="price-cart">
+								<p class="price style-h4">310 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
 								</a>
 							</div>
 						</div>
 					</li>
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Pistachio-product-list.png" width="168" height="168" alt="Фисташка">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Фисташка</h3>
-								<p class="products-list-item-description">Фисташковый пломбир с кусочками шоколада</p>
+						<img class="product-image" src="images/Pistachio-product-list.png" width="168" height="168" alt="Фисташка">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Фисташка</h3>
+								<p class="product-description style-p2">Фисташковый пломбир с кусочками шоколада</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">340 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
+							<div class="price-cart">
+								<p class="price style-h4">340 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
 								</a>
 							</div>
 						</div>
 					</li>
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Blueberry-product-list.png" width="168" height="168" alt="Черника">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Черника</h3>
-								<p class="products-list-item-description">Крем-брюле с черничным джемом</p>
+						<img class="product-image" src="images/Blueberry-product-list.png" width="168" height="168" alt="Черника">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Черника</h3>
+								<p class="product-description style-p2">Крем-брюле с черничным джемом</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">330 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
+							<div class="price-cart">
+								<p class="price style-h4">330 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
 								</a>
 							</div>
 						</div>
 					</li>
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Bubble-gum-product-list.png" width="168" height="168" alt="Бабл-гам">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Бабл-гам</h3>
-								<p class="products-list-item-description">Ванильный пломбир со сладкой посыпкойм</p>
+						<img class="product-image" src="images/Bubble-gum-product-list.png" width="168" height="168" alt="Бабл-гам">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name">Бабл-гам</h3>
+								<p class="product-description style-p2">Ванильный пломбир со сладкой посыпкойм</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">320 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
+							<div class="price-cart">
+								<p class="price style-h4">320 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span>
 								</a>
 							</div>
 						</div>
 					</li>
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Blackberry-product-list.png" width="168" height="168" alt="Ежевика">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Ежевика</h3>
-								<p class="products-list-item-description">Сливочное мороженое с ежевичным джемом</p>
+						<img class="product-image" src="images/Blackberry-product-list.png" width="168" height="168" alt="Ежевика">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Ежевика</h3>
+								<p class="product-description style-p2">Сливочное мороженое с ежевичным джемом</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">330 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
-							</div>
-						</div>
-					</li>
-					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Banana-product-list.png" width="168" height="168" alt="Банан">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Банан</h3>
-								<p class="products-list-item-description">Сливочный пломбир с банановым вкусом</p>
-							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">340 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							<div class="price-cart">
+								<p class="price style-h4">330 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
 							</div>
 						</div>
 					</li>
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Strawberry-product-list.png" width="168" height="168" alt="Клубничка">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Клубничка</h3>
-								<p class="products-list-item-description">Клубничка</p>
+						<img class="product-image" src="images/Banana-product-list.png" width="168" height="168" alt="Банан">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Банан</h3>
+								<p class="product-description style-p2">Сливочный пломбир с банановым вкусом</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">300 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
-							</div>
-						</div>
-					</li>
-					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Lemon-product-list.png" width="168" height="168" alt="Лимон">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Лимон</h3>
-								<p class="products-list-item-description">Освежающий лимонный сорбет</p>
-							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">310 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							<div class="price-cart">
+								<p class="price style-h4">340 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
 							</div>
 						</div>
 					</li>
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/mentol-product-list.png" width="168" height="168" alt="Ментол">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Ментол</h3>
-								<p class="products-list-item-description">Сливочный пломбир с ментоловым сиропом</p>
+						<img class="product-image" src="images/Strawberry-product-list.png" width="168" height="168" alt="Клубничка">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Клубничка</h3>
+								<p class="product-description style-p2">Сливочный пломбир с клубничным вкусом</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">320 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
-							</div>
-						</div>
-					</li>
-					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Nut-product-list.png" width="168" height="168" alt="Орешек">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Орешек</h3>
-								<p class="products-list-item-description">Фисташковый пломбир с шоколадным сиропом</p>
-							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">360 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							<div class="price-cart">
+								<p class="price style-h4">300 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
 							</div>
 						</div>
 					</li>
 					<li class="products-list-item">
-						<img class="products-list-item-image" src="images/Cream-product-list.png" width="168" height="168" alt="Крем-брюле">
-						<div class="products-list-item-info">
-							<div class="products-list-item-name-and-description">
-								<h3 class="products-list-item-name">Крем-брюле</h3>
-								<p class="products-list-item-description">Классическое крем-брюле</p>
+						<img class="product-image" src="images/Choco-product-list.png" width="168" height="168" alt="Лимон">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Шоколадка</h3>
+								<p class="product-description style-p2">Классический шоколадный пломбир</p>
 							</div>
-							<div class="products-list-item-price-and-cart">
-								<p class="price">280 &#8381;/кг</p>
-								<a class="button-add-to-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							<div class="price-cart">
+								<p class="price style-h4">270 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							</div>
+						</div>
+					</li>
+					<li class="products-list-item">
+						<img class="product-image" src="images/Lemon-product-list.png" width="168" height="168" alt="Лимон">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Лимон</h3>
+								<p class="product-description style-p2">Освежающий лимонный сорбет</p>
+							</div>
+							<div class="price-cart">
+								<p class="price style-h4">310 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							</div>
+						</div>
+					</li>
+					<li class="products-list-item">
+						<img class="product-image" src="images/mentol-product-list.png" width="168" height="168" alt="Ментол">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Ментол</h3>
+								<p class="product-description style-p2">Сливочный пломбир с ментоловым сиропом</p>
+							</div>
+							<div class="price-cart">
+								<p class="price style-h4">320 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							</div>
+						</div>
+					</li>
+					<li class="products-list-item">
+						<img class="product-image" src="images/Nut-product-list.png" width="168" height="168" alt="Орешек">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Орешек</h3>
+								<p class="product-description style-p2">Фисташковый пломбир с шоколадным сиропом</p>
+							</div>
+							<div class="price-cart">
+								<p class="price style-h4">360 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+							</div>
+						</div>
+					</li>
+					<li class="products-list-item">
+						<img class="product-image" src="images/Cream-product-list.png" width="168" height="168" alt="Крем-брюле">
+						<div class="product-info">
+							<div class="name-description">
+								<h3 class="product-name style-h4">Крем-брюле</h3>
+								<p class="product-description style-p2">Классическое крем-брюле</p>
+							</div>
+							<div class="price-cart">
+								<p class="price style-h4">280 &#8381;/кг</p>
+								<a class="add-cart" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
 							</div>
 						</div>
 					</li>
 				</ul>
-				<a class="catalog-show-more-button button-general" href="#">Показать еще</a>
+			</div>
+			<div class="catalog-more">
+				<a class="show-more button-general" href="#">Показать еще</a>
 				<ul class="catalog-pagination">
 					<li class="catalog-pagination-item">
 						<a class="catalog-pagination-link catalog-pagination prev" href="#">
@@ -297,7 +315,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class="catalog-footer">
+	<footer class="catalog-footer footer">
 		<ul class="social">
 			<li class="social-item">
 				<a class="social-link tg" href="https://t.me/htmlacademy">
