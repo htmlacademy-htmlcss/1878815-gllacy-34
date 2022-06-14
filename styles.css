@@ -28,7 +28,7 @@ html {
 
 body {
     margin: 0 98px;
-    max-width: 1170px;
+    width: 1170px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -226,8 +226,8 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    height: 104px;
-    width: 1170px;
+    max-height: 104px;
+    max-width: 1170px;
 }
 
 .navigation-list {
@@ -282,7 +282,7 @@ body {
 }
 .slider {
     width: 1170px;
-    height: 554px;
+    max-height: 100%;
 }
 
 .slider-images li {
@@ -328,7 +328,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1170px;
+    max-width: 1170px;
  }
 .special-offering-header {
     text-align: center;
@@ -351,8 +351,8 @@ body {
     background: #FF7799;
     background-repeat: no-repeat;
     background-position: 100%;
-    width: 570px;
-    height: 268px;
+    max-width: 570px;
+    min-height: 100%;
 }
 
 .gift-raspberry {
@@ -373,7 +373,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1170px;
+    max-width: 1170px;
     flex-wrap: wrap;
 }
 
@@ -398,7 +398,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 270px;
-    height: 332px;
     align-items: center;
     background: #FCFCFC;
     border-radius: 8px;
@@ -422,8 +421,8 @@ body {
     background-repeat: no-repeat;
     border-radius: 16px;
     padding: 24px;
-    background-size: 1170px 480px;
-    width: 1170px;
+    background-size: 1170px 100%;
+    max-width: 1170px;
 }
 
 .advantades-wrapper {
@@ -431,8 +430,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1122px;
-    height: 432px;
+    max-width: 1122px;
+    min-height: 100%;
     background: #FFFFFF;
     border-radius: 16px;
 }
@@ -467,16 +466,16 @@ body {
     background-image: url("images/news.jpg");
     background-repeat: no-repeat;
     border-radius: 16px;
-    width: 570px;
-    height: 224px;
+    max-width: 570px;
+    min-height: 100%;
 }
 
 .subscribe-email {
     background-image: url("images/subscribe.png");
     background-repeat: no-repeat;
     border-radius: 16px;
-    width: 570px;
-    height: 224px;
+    max-width: 570px;
+    min-height: 100%;
 }
 
 .subscribe-email-wrapper {
@@ -498,7 +497,7 @@ body {
 
 .mainpage-delivery {
     margin: 80px 0 80px 0;
-    width: 1170px;
+    max-width: 1170px;
     display: flex;
     flex-wrap: wrap;
     background-image: url("images/delivery.jpg");
@@ -524,8 +523,8 @@ body {
     margin: 0;
     background-image: url("images/contacts.jpg");
     padding: 64px 763px 64px 64px;
-    height: 364px;
-    width: 343px;
+    min-height: 100%;
+    max-width: 343px;
     left: 0px;
     top: 0px;
     border-radius: 8px;
@@ -645,7 +644,7 @@ body {
 .mainpage-learn-more {
     margin: 80px 0 80px 0;
     display: flex;
-    width: 1170px;
+    max-width: 1170px;
     justify-content: space-between;
 }
 
@@ -661,7 +660,7 @@ body {
     grid-template-columns: 182px 182px;
     justify-content: space-around;
     height: 48px;
-    width: 356px;
+    max-width: 356px;
     list-style: none;
 }
 
@@ -694,7 +693,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 823px;
-    max-height: 148px;
+    min-height: 148px;
 }
 
 form.filters {
