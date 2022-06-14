@@ -46,7 +46,7 @@ body {
     margin: 0;
 }
 
-/* start - general text styles from the styleguide - start */ 
+/* start - general text styles from the styleguide - start */
 
 .style-h1 {
     font-family: "Inter", "Arial", sans-serif;
@@ -81,7 +81,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #2D3440;  
+    color: #2D3440;
 }
 
 .style-h5 {
@@ -193,7 +193,7 @@ body {
 }
 
 .button-additional-bright {
-    background-color: rgba(252, 252, 252, 0.3);    
+    background-color: rgba(252, 252, 252, 0.3);
     border: 2px solid #FCFCFC;
     border-radius: 20px;
     font-family: "Inter", "Arial", sans-serif;
@@ -405,7 +405,7 @@ body {
 
 .products-list-item-image {
     width: 168px;
-    height: 168px;
+    max-height: 168px;
 }
 
 .button-add-to-cart {
