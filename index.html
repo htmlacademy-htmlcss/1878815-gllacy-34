@@ -10,39 +10,39 @@
 </head>
 
 <body>
-	<header class="-header">
-		<nav class="navigaton">
-			<ul class="navigation-list style-p3">
-				<li class="navigation-item logo">
-					<a class="navigation-link" href="index.html">
+	<header class="header">
+		<nav class="navigation">
+			<ul class="nav-list style-p3">
+				<li class="nav-item logo">
+					<a class="nav-link logo" href="index.html">
 						<span class="visually-hidden">Главная страница</span>
 						<img src="images/Logo.svg" alt="Главная" width="137px" height="55.72px">
 					</a>
 				</li>
-				<li class="navigation-item">
-					<a class="navigation-link" href="catalog.html">Каталог</a>
+				<li class="nav-item">
+					<a class="nav-link" href="catalog.html">Каталог</a>
 				</li>
-				<li class="navigation-item">
-					<a class="navigation-link" href=#>Доставка и оплата</a>
+				<li class="nav-item">
+					<a class="nav-link" href=#>Доставка и оплата</a>
 				</li>
-				<li class="navigation-item">
-					<a class="navigation-link" href=#>О компании</a>
+				<li class="nav-item">
+					<a class="nav-link" href=#>О компании</a>
 				</li>
 			</ul>
-			<ul class="navigation-list style-c1">
-				<li class="navigation-item">
+			<ul class="nav-list style-c1">
+				<li class="nav-item">
 					<a class="contact-phone style-pb" href="tel:+78005558628">+7 800 555-86-28</a>
 				</li>
-				<li class="navigation-item ">
-					<a class="navigation-link search-link" href="#">
+				<li class="nav-item ">
+					<a class="nav-link-user search-link" href="#">
 						<span class="visually-hidden">Поиск</span>
 					</a>
 				</li>
-				<li class="navigation-item">
-					<a class="navigation-link-user login-link" href="#">Вход</a>
+				<li class="nav-item">
+					<a class="nav-link-user login-link" href="#">Вход</a>
 				</li>
-				<li class="navigation-item">
-					<a class="navigation-link-user cart-link" href="#">
+				<li class="nav-item">
+					<a class="nav-link-user cart-link" href="#">
 					<span class="visually-hidden">Корзина</span>2 товара
 					</a>
 				</li>
@@ -57,7 +57,7 @@
 				<div class="slide-text">
 					<h3 class="slide-title style-h1 current">Нежный пломбир<br> с клубничным джемом</h3>
 					<p class="slide-description style-p1 current">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-					<a class="button-general button-order" href="#">Заказать</a>
+					<a class="btn-general btn btn-order" href="#">Заказать</a>
 				</div>
 				<ul class="slide-images">
 					<li>
@@ -75,7 +75,7 @@
 				<div class="slide-text">
 					<h3 class="slide-title style-h1 current">Сливочное мороженое со вкусом банана</h3>
 					<p class="slide-description style-p1 current">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-					<a class="button-general button-order" href="#">Заказать</a>
+					<a class="btn-general btn btn-order" href="#">Заказать</a>
 				</div>
 				<ul class="slide-images">
 					<li>
@@ -93,7 +93,7 @@
 				<div class="slide-text">
 					<h3 class="slide-title style-h1 current">Карамельный пломбир с маршмеллоу</h3>
 					<p class="slide-description style-p1 current">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-					<a class="button-general button-order" href="#">Заказать</a>
+					<a class="btn-general btn btn-order" href="#">Заказать</a>
 				</div>
 				<ul class="slide-images">
 					<li>
@@ -108,10 +108,10 @@
 				</ul>
 			</div>
 			<div class="slider-buttons">
-				<input type="radio" id="slider-button-prev" class="slider-button prev button">
-				<label for="slider-button-prev" class="visually-hidden">Предыдущее фото</label>
-				<input type="radio" id="slider-button-next" class="slider-button next">
-				<label for="slider-button-next" class="visually-hidden">Следующее фото</label>
+				<input type="radio" id="slider-btn-prev" class="slider-btn prev">
+				<label for="slider-btn-prev" class="visually-hidden">Предыдущее фото</label>
+				<input type="radio" id="slider-btn-next" class="slider-btn next">
+				<label for="slider-btn-next" class="visually-hidden">Следующее фото</label>
 			</div>
 			<div class="slider-pagination">
 				<input type="radio" class="slider-pagination-item current" id="slider-pagination-item-current" checked>
@@ -143,14 +143,17 @@
 			<h2 class="special-offering-header style-h2">Заказывайте мороженое<br>и получайте подарки!</h2>
 			<ul class="special-offering-list">
 				<li class="special-offering-item gift-raspberry">
+					<div>
 					<b class="special-offering-item-name style-h3">Малинка даром!</b>
 					<p class="special-offering-item-description style-p2">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="button-general button-gift" href="#">Хочу подарок</a>
+					<a class="btn-general btn btn-gift" href="#">Хочу подарок</a>
+					</div>
 				</li>
 				<li class="special-offering-item gift-marshmallow">
+					<div>
 					<b class="special-offering-item-name style-h3">Маршмеллоу даром!</b>
 					<p class="special-offering-item-description style-p2">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-					<a class="button-general button-gift" href="#">Хочу подарок</a>
+					<a class="btn-general btn btn-gift" href="#">Хочу подарок</a>
 				</li>
 			</ul>
 		</section>
@@ -247,7 +250,7 @@
 					<form class="subscribe">
 						<label class="form-label" for="subscribe-email"><span class="visually-hidden">Ваш имейл</span></label>
 							<input type="email" class="field" id="subscribe-email" name="subscribe-email" placeholder="email@example.com">
-						<button class="button-additional-light submit" type="submit">Отправить</button>
+						<button class="btn-additional-light btn submit" type="submit">Отправить</button>
 					</form>
 				</div>
 			</article>
@@ -266,7 +269,7 @@
 					<input type="text" class="field" id="delivery-phone" name="delivery-phone" placeholder="+7 800 000-00-00">
 					<label class="form-label style-pb" for="delivery-adress">Адрес</label><img src="images/info.svg" width="12.42" height="12.42" alt="дополнительная информация">
 					<input class="field" type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
-					<button class="button-additional-light submit" type="submit">Отправить</button>
+					<button class="btn-additional-light btn submit" type="submit">Отправить</button>
 				</form>
 			</div>
 		</section>
@@ -278,7 +281,7 @@
             	<p class="style-p2">Для заказов по телефону:</p>
             	<a class="style-h4" href="tel:+78128121212">+7 (812) 812-12-12</a>
             	<p class="style-c1">(с 10 до 20 ежедневно)</p>
-            	<a class="feedback-form-button button-additional-light" href="#">Форма обратной связи</a>
+            	<a class="feedback-form-btn btn btn-additional-light" href="#">Форма обратной связи</a>
           </address>
 		</section>
 	</main>
