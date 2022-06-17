@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    margin: 0 98px;
+    margin: 0 auto;
     width: 1170px;
     display: flex;
     flex-direction: column;
@@ -49,62 +49,44 @@ body {
 /* start - general text styles from the styleguide - start */
 
 .style-h1 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 900;
     font-size: 36px;
     line-height: 46px;
-    color: #2D3440;
 }
 
 .style-h2 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
-    color: #2D3440;
 }
 
 .style-h3 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    color: #2D3440;
 }
 
 .style-h4 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    text-decoration: none;
     color: #2D3440;
 }
 
 .style-h5 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    color: #2D3440;
 }
 
 .style-p1 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #2D3440;
 }
 
 .style-p2 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -112,8 +94,6 @@ body {
 }
 
 .style-p3 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -121,8 +101,6 @@ body {
 }
 
 .style-pb {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -130,8 +108,6 @@ body {
 }
 
 .style-c1 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -139,8 +115,6 @@ body {
 }
 
 .style-cb {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
@@ -148,8 +122,6 @@ body {
 }
 
 .style-c2 {
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -160,83 +132,75 @@ body {
 
 /* start - general button styles from the styleguide - start */
 
-.button-general {
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
     max-width: 100%;
     max-height: 100%;
-    background: #FCFCFC;
-    border: 4px solid rgba(252, 252, 252);
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
-    border-radius: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
     font-family: "Inter", "Arial", sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
     text-align: center;
-    color: #2D3440;
     text-decoration: none;
+}
+
+.btn-general {
+
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    color: #2D3440;
     padding: 12px 32px 12px 32px;
 }
 
-.button-additional-light {
-    max-width: 100%;
-    max-height: 100%;
+.btn-additional-light {
     background: #FF2F64;
     border: 4px solid rgba(255, 47, 100, 0.3);
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
     text-align: center;
     color: #FCFCFC;
-    text-decoration: none;
     padding:  12px 32px 12px 32px;
 }
 
-.button-additional-bright {
-    max-width: 100%;
-    max-height: 100%;
+.btn-additional-bright {
     background-color: rgba(252, 252, 252, 0.3);
+    font-size: 14px;
     border: 2px solid #FCFCFC;
     border-radius: 20px;
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
     color: #2D3440;
-    text-decoration: none;
-    padding: 8px 52,5px;
+    padding: 8px 52.5px;
 }
 
 /* end - general button styles from the styleguide - end */
 
 .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.navigaton {
+.navigation {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 24px 0;
     max-height: 104px;
     max-width: 1170px;
 }
 
-.navigation-list {
+.nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,14 +208,33 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    min-width: 431px;
 }
 
-.navigation-link {
+.nav-item {
+    margin: 0;
+}
+
+.nav-item:first-child{
+    padding-left: 0;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.nav-link {
     color: #2D3440;
     text-decoration: none;
+    padding: 16px;
+    margin: 0;
 }
 
-.navigation-link.current {
+.logo.nav-link {
+    padding-left: 0;
+}
+
+.nav-link.current {
     padding: 8px 16px;
     background: #FF4A78;
     border-radius: 30px;
@@ -262,14 +245,10 @@ body {
     color: #2D3440;
     text-decoration: none;
 }
-.search-link {
-    background-image: url("images/Search.svg");
-    border-radius: 27px;
-    background-repeat: no-repeat;
-    background: rgba(252, 252, 252, 0.3);
-}
-
-.navigation-link-user {
+.nav-link-user {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
     background: rgba(252, 252, 252, 0.3);
     color: #2D3440;
     text-decoration: none;
@@ -277,6 +256,12 @@ body {
     border-radius: 30px;
     background-position: 16px 8px;
     padding: 6px 16px 6px 38px;
+}
+
+.search-link.nav-link-user {
+    background-image: url("images/Search.svg");
+    padding: 16px;
+    background-position: center center;
 }
 
 .login-link {
@@ -300,7 +285,7 @@ body {
     max-height: 100%;
 }
 
-.slider-button {
+.slider-btn {
     appearance: none;
     background: rgba(252, 252, 252, 0.3);
     background-position: center center;
@@ -312,11 +297,11 @@ body {
     cursor: pointer;
 }
 
-.slider-button.prev {
+.slider-btn.prev {
     background-image: url("images/Arrow-left.svg");
 }
 
-.slider-button.next {
+.slider-btn.next {
     background-image: url("images/Arrow-right.svg");
 }
 
@@ -343,7 +328,7 @@ body {
  }
 .special-offering-header {
     text-align: center;
-    margin: 55px 0px;
+    margin: 55px0;
 }
 
 .special-offering-list {
@@ -400,7 +385,7 @@ body {
 
 .products-list-header {
     text-align: center;
-    margin: 55px 0px;
+    margin: 55px0;
 }
 
 .products-list-item {
@@ -409,7 +394,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 270px;
-    align-items: center;
     background: #FCFCFC;
     border-radius: 8px;
 }
@@ -419,7 +403,7 @@ body {
     max-height: 168px;
 }
 
-.button-add-to-cart {
+.btn-add-to-cart {
     background: #FF2F64;
     border-radius: 26px;
     background-image: url("images/Cart.svg");
@@ -483,6 +467,7 @@ body {
 .article-preview {
     background-image: url("images/news.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 16px;
     max-width: 570px;
     max-height: 224px;
@@ -502,6 +487,7 @@ body {
 .subscribe-email {
     background-image: url("images/subscribe.png");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 16px;
     max-width: 570px;
     max-height: 224px;
@@ -538,6 +524,7 @@ body {
     flex-wrap: nowrap;
     background-image: url("images/delivery.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 16px;
     padding: 64px;
 }
@@ -552,7 +539,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     background: #FCFCFC;
-    box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+    box-shadow:0 15px 40px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
     max-width: 420px;
     min-height: 100%;
@@ -564,22 +551,29 @@ body {
     color: #2D3440;
 }
 
+.address {
+    margin: 0;
+    background: #FCFCFC;
+    box-shadow:0 8px 16px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
+    padding: 40px;
+    font-style: normal;
+}
+
 .address-wrapper {
-    margin: 80px 0 80px 0;
+    margin: 80px 0 0 0;
     background-image: url("images/contacts.jpg");
     background-position: center;
     padding: 64px 763px 64px 64px;
     max-width: 1170px;
     min-height: 100%;
     border-radius: 8px;
+    background-size: cover;
 }
 
-.address{
-    margin: 0;
-    background: #FCFCFC;
-    box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
-    border-radius: 8px;
-    padding: 40px;
+.style-h4 a {
+    text-decoration: none;
+    color: #2D3440;
 }
 
 .breadcrumb-menu-item {
@@ -598,7 +592,7 @@ body {
 .price-range {
     background: rgba(252, 252, 252,0.3);
     border-radius: 20px;
-    border-width: 0px;
+    border-width:0;
     height: 36px;
     list-style: none;
 }
@@ -681,19 +675,11 @@ body {
     align-items: center;
 }
 
-.slider-buttons {
-
-}
-
 .mainpage-learn-more {
     margin: 80px 0 80px 0;
     display: flex;
     max-width: 1170px;
     justify-content: space-between;
-}
-
-.subscribe-email-p {
-
 }
 
 .footer {
@@ -714,7 +700,6 @@ body {
 
 .catalog-footer {
     border-top: 1px solid rgba(252, 252, 252, 0.3);
-
 }
 
 .footer-link {
@@ -756,5 +741,15 @@ form.filters {
 
 .catalog-more {
     display: flex;
-    margin: 16px 0px 40px 0px;
+    align-items: baseline;
+    margin: 16px 0 40px 0;
+    max-height: 44px;
+}
+
+.product-info {
+    text-align: left;
+}
+
+.name-description {
+    text-align: center;
 }
