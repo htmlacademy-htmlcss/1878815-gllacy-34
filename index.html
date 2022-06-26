@@ -14,7 +14,7 @@
 	<header class="header">
 		<nav class="navigation">
 			<ul class="nav-list style-p3">
-				<li class="nav-item logo">
+				<li class="nav-item">
 					<a class="nav-link logo" href="index.html">
 						<span class="visually-hidden">Главная страница</span>
 						<img src="images/Logo.svg" alt="Главная" width="137px" height="55.72px">
@@ -29,8 +29,9 @@
 				<li class="nav-item">
 					<a class="nav-link" href=#>О компании</a>
 				</li>
-			</ul>
-			<ul class="nav-list style-c1">
+			    </ul>
+			</div>
+			<ul class="nav-list nav-right style-c1">
 				<li class="nav-item">
 					<a class="nav-link contact-phone style-pb" href="tel:+78005558628">+7 800 555-86-28</a>
 				</li>
@@ -124,17 +125,17 @@
 			</div>
 			<ul class="social social-slider">
 				<li class="social-item">
-					<a class="social-link-link tg" href="#">
+					<a class="social-link tg" href="#">
 						<span class="visually-hidden">Телеграм</span>
 					</a>
 				</li>
 				<li class="social-item">
-					<a class="social-link-link vk" href="#">
+					<a class="social-link vk" href="#">
 						<span class="visually-hidden">ВКонтакте</span>
 					</a>
 				</li>
 				<li class="social-item">
-					<a class="social-link-link yt" href="#">
+					<a class="social-link yt" href="#">
 						<span class="visually-hidden">Ютьюб</span>
 					</a>
 				</li>
@@ -208,7 +209,7 @@
 					<div class="product-info">
 						<div class="name-description">
 							<h3 class="product-name style-h4">Бабл-гам</h3>
-							<p class="product-description style-p2">Ванильный пломбир со&nbsp;сладкой посыпкойм</p>
+							<p class="product-description style-p2">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
 						</div>
 						<div class="price-cart">
 							<p class="price style-h4">320 &#8381;/кг</p>
@@ -258,43 +259,45 @@
 		</div>
 		<section class="mainpage-delivery">
 			<div class="delivery-discr">
-				<h2 class="style-h2">Доставка любимого мороженого на дом</h2>
-				<p class="style-p2">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+				<h2 class="style-h2 delivery-discr-h">Доставка любимого мороженого на дом</h2>
+				<p class="style-p2 delivery-discr-p">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
 			</div>
 			<div class="delivery-form-wrapper">
-				<p class="style-p2">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+				<p class="style-p2 delivery-form-p">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
 				<form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-					<div class="form-fields-wrapper">
-						<div class="form-date-phone">
-							<div class="form-field">
-								<label class="form-label style-pb" for="delivery-date">Дата</label>
-								<input class="field" type="text" class="field" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-							</div>
-							<div class="form-field">
-								<label class="form-label style-pb" for="delivery-phone">Телефон</label>
-								<input class="field" type="text" class="field" id="delivery-phone" name="delivery-phone" placeholder="+7 800 000-00-00">
-							</div>
-						</div>
-						<div class="form-field">
-							<label class="form-label style-pb" for="delivery-adress">Адрес</label>
-							<input class="field" type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
-						</div>
+					<div class="form-field delivery-date">
+						<label class="form-label style-pb" for="delivery-date">Дата
+							<button class="info">
+								<span class="visually-hidden">Посмотреть дополнительную информацию</span>
+							</button>
+						</label>
+						<input class="field" type="text" class="field" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
 					</div>
-					<button class="btn-additional-light btn submit" type="submit">Отправить</button>
+					<div class="form-field delivery-phone">
+						<label class="form-label style-pb" for="delivery-phone">Телефон</label>
+						<input class="field" type="text" class="field" id="delivery-phone" name="delivery-phone" placeholder="+7 800 000-00-00">
+					</div>
+					<div class="form-field delivery-address">
+						<label class="form-label style-pb" for="delivery-address">Адрес
+								<button class="info">
+									<span class="visually-hidden">Посмотреть дополнительную информацию</span>
+								</button>
+							</label></label>
+						<input class="field" type="text" id="delivery-address" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
+					</div>
+					<button class="btn-additional-light btn delivery-btn" type="submit">Отправить</button>
 				</form>
 			</div>
 		</section>
 		<section class="address">
 			<h2 class="visually-hidden">Контакты</h2>
 			<address class="address-wrapper">
-            	<p class="style-p2">Адрес главного офиса<br>и офлайн-магазина:</p>
+            	<p class="style-p2 address-office">Адрес главного офиса<br>и офлайн-магазина:</p>
             	<b class="style-h4">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</b>
-					<p class="style-p2">Для заказов по телефону:</p>
-				<div>
+					<p class="style-p2 tel-c1">Для заказов по телефону:</p>
 					<a class="style-h4" href="tel:+78128121212">+7 (812) 812-12-12</a>
-					<p class="style-c1">(с 10 до 20 ежедневно)</p>
-            	</div>
-				<a class="feedback-form-btn btn btn-additional-light" href="#">Форма обратной связи</a>
+					<p class="style-c1 tel-c2">(с 10 до 20 ежедневно)</p>
+				<a class="feedback-btn btn btn-additional-light" href="#">Форма обратной связи</a>
           </address>
 		</section>
 	</main>
