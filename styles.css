@@ -1495,7 +1495,17 @@ form.filters {
 .footer-link.current {
     background: #FF4A78;
     color: #FCFCFC;
-    border: 1px solid #FCFCFC;
+}
+
+.footer-link.highlight.current::before {
+    content: "";
+    top: 6px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url("images/Heart-fill-white.svg");
+    background-repeat: no-repeat;
 }
 
 .footer-link:hover:not(.current) {
