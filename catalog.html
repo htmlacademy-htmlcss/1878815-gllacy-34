@@ -19,7 +19,24 @@
 			<div class="nav-lists">
 				<ul class="nav-list style-p3">
 					<li class="nav-item">
-						<a class="nav-link current" href="catalog.html">Каталог</a>
+						<a class="nav-link catalog current" href="catalog.html">Каталог</a>
+						<ul class="nav-submenu style-c1">
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Новинки</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Сливочное</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Щербет</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Фруктовый лед</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Мелорин</a>
+							</li>
+						</ul>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href=#>Доставка и оплата</a>
@@ -39,6 +56,11 @@
 							</svg>
 							<span class="visually-hidden">Поиск</span>
 						</a>
+						<form class="search-form style-p3">
+							<label class="form-label visually-hidden" for="seach">Ключевое слово</label>
+							<input type="text" class="field search" id="search" placeholder="Поиск по сайту">
+							<button class="clear-btn"><span class="visually-hidden">Очистить</span></button>
+						</form>
 					</li>
 					<li class="nav-item btn-style">
 						<a class="nav-link-user login-link" href="#">
@@ -47,6 +69,22 @@
 								</svg>
 								Вход
 						</a>
+						<div class="login-popover">
+							<p class="style-h3">Личный кабинет</p>
+							<form class="login-form">
+								<fieldset class="login-form-fieldset">
+									<label for="login-email-field" class="login-email visually-hidden">Имейл</label>
+									<input class="login-email-field field" type="email" id="login-email-field" placeholder="email@example.com" required>
+									<label for="login-password-field" class="login-password visually-hidden" placeholder="Пароль" required>Пароль</label>
+									<input class="login-password-field field" type="password" id="login-password-field">
+								</fieldset>
+								<button class="btn btn-pink login-btn">Войти</button>
+								<div class="login-links">
+									<a class="login-link style-c1" href="#">Забыли пароль?</a>
+									<a class="login-link style-c1" href="#">Регистрация</a>
+								</div>
+							</form>
+						</div>
 					</li>
 					<li class="nav-item btn-style">
 						<a class="nav-link-user cart-link" href="#">
@@ -55,6 +93,37 @@
 							</svg>
 							<span class="visually-hidden">Корзина</span>2 товара
 						</a>
+						<div class="cart-popover-full">
+							<p class="style-h3 cart-h">Корзина</p>
+							<ul class="cart-product-list">
+								<li class="cart-product-item">
+									<img class="cart-product-image" src="images/Raspberry-product-list.png" width="46px" height="46px" alt="Малинка">
+									<div class="cart-name-quantity">
+										<p class="cart-name style-h5">Малинка</p>
+										<p class="cart-quantity-price style-c1"><span class="cart-quantity">1 кг</span> х <span class="cart-price">310 &#8381;</span></p>
+									</div>
+									<p class="cart-sum style-h5">310 &#8381;</p>
+									<button class="cart-delete"><span class="visually-hidden">Удалить из корзины</span></button>
+								</li>
+								<li class="cart-product-item">
+									<img class="cart-product-image" src="images/Bubble-gum-product-list.png" width="46px" height="46px" alt="Бабл-гам">
+									<div class="cart-name-quantity">
+										<p class="cart-name style-h5">Бабл-гам</p>
+										<p class="cart-quantity-price style-c1"><span class="cart-quantity">1,5 кг</span> х <span class="cart-price">480 &#8381;</span></p>
+									</div>
+									<p class="cart-sum style-h5">480 &#8381;</p>
+									<button class="cart-delete"><span class="visually-hidden">Удалить из корзины</span></button>
+								</li>
+							</ul>
+							<div class="cart-btn-total">
+								<button class="btn btn-pink cart-btn">Оформить заказ</button>
+								<p class="cart-total style-h5">Итого: 790 &#8381;</p>
+							</div>
+						</div>
+						<div class="cart-popover-empty">
+							<p class="style-h3 cart-empty-h">Ваша корзина пока пуста</p>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -72,71 +141,117 @@
 				</li>
 			</ul>
 			<h2 class="style-h2 catalog-h2">Сливочное мороженое</h2>
-			<div class="filters-wrapper">
 				<form class="filters" action="https://echo.htmlacademy.ru/" method="get">
-					<div class="catalog-sort filter">
-						<label class="style-c1 filter-title" for="sort">Сортировка:</label>
-							<select class="filter-select style-c1" name="sort" id="sort">
-								<option class="style-c1" value="popular">по популярности</option>
-								<option class="style-c1" value="cheap">по цене</option>
-								<option class="style-c1" value="new">по дате добавления</option>
-							</select>
-					</div>
-					<div class="filter-price filter">
-						<label class="style-c1 filter-title" for="price">Цена: 100 &#8381; – 500 &#8381;</label>
-						<div class="price-range">
-							<input class="style-c1" type="range" name="price" id="price" min="100" max="500" step="50">
+					<legend class="visually-hidden">Фильтр</legend>
+					<fieldset class="catalog-form-fieldset">
+						<div class="filter">
+							<label class="style-c1 filter-title" for="sort">Сортировка:</label>
+								<select class="select-control style-c1" name="sort" id="sort">
+										<option class="style-c1" value="popular">по популярности</option>
+										<option class="style-c1" value="cheap">по цене</option>
+										<option class="style-c1" value="new">по дате добавления</option>
+								</select>
+						</div>
+						<div class="filter">
+							<div class="range-wrapper-inputs filter-title style-c1">
+								<label>
+								Цена:<input class="range-input" type="number" value="100" name="min-price">&#8381;</label>
+								<label>&nbsp; &ndash;<input class="range-input" type="number" value="500" name="max-price" style="width: 37px">&#8381;
+								</label>
 							</div>
-					</div>
-					<div class="filter-fat filter">
-						<label class="style-c1 filter-title">Жирность:</label>
-						<ul class="fat-list">
-							<li class="filter-item">
-								<input class="control-input" type="radio" name="fat" value="0%" id="fat-0">
-								<label class="style-c1 control" for="fat-0">0%</label>
-							</li>
-							<li class="filter-item">
-								<input class="control-input" type="radio" name="fat" value="до 10%" id="fat-less-10" checked>
-								<label class="style-c1 control" for="fat-less-10">до 10%</label>
-							</li>
-							<li class="filter-item">
-								<input class="control-input" type="radio" name="fat" value="до 30%" id="fat-less-30">
-								<label class="style-c1 control" for="fat-less-30">до 30%</label>
-							</li>
-							<li class="filter-item">
-								<input class="control-input" type="radio" name="fat" value="свыше 30%" id="fat-more-30">
-								<label class="style-c1 control" for="fat-more-30">свыше 30%</label>
-							</li>
-						</ul>
-					</div>
-					<div class="filter-filling filter">
-						<label class="filter-title style-c1">Наполнители:</label>
-						<ul class="filling-list">
-							<li class="filter-item">
-								<input class="control-input" type="checkbox" name="choco-filling" id="choco-filling" checked>
-								<label class="style-c1" for="choco-filling" class="control">шоколадные</label>
-							</li>
-							<li class="filter-item">
-								<input class="control-input" type="checkbox" name="sugar-filling" id="sugar-filling" checked>
-								<label class="style-c1" for="sugar-filling" class="control">сахарные посыпки</label>
-							</li>
-							<li class="filter-item">
-								<input class="control-input" type="checkbox" name="fruit-filling" id="fruit-filling">
-								<label class="style-c1" for="fruit-filling" class="control">фрукты</label>
-							</li>
-							<li class="filter-item">
-								<input class="control-input" type="checkbox" name="syrop-filling" id="syrop-filling">
-								<label for="syrop-filling" class="style-c1">сиропы</label>
-							</li>
-							<li class="filter-item">
-								<input class="control-input" type="checkbox" name="jam-filling" id="jam-filling">
-								<label for="jam-filling" class="style-c1">джемы</label>
-							</li>
-						</ul>
-					</div>
-					<button class="btn-light btn filters-btn" type="submit">Применить</button>
+							<div class="filter-wrapper range">
+								<div class="range-scale">
+									<div class="range-bar" style="left: 42px; width: 56px">
+										<button class="range-toggle toggle-min">
+											<span class="visually-hidden">Изменить минимальную цену.</span>
+										</button>
+										<button class="range-toggle toggle-max">
+											<span class="visually-hidden">Изменить максимальную цену.</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter">
+							<label class="style-c1 filter-title">Жирность:</label>
+							<div class="filter-wrapper">
+								<ul class="filter-list">
+									<li class="filter-item">
+										<label for="fat-0" class="style-c1 control">
+											<input class="control-input visually-hidden" type="radio" name="fat" value="0%" id="fat-0">
+											<span class="radio"></span>
+											<span class="text-fat">0%</span>
+										</label>
+									</li>
+									<li class="filter-item">
+										<label for="fat-less-10" class="style-c1 control">
+											<input class="control-input visually-hidden" type="radio" name="fat" value="до 10%" id="fat-less-10" checked>
+											<span class="radio"></span>
+											<span class="text-fat">до 10%</span>
+										</label>
+									</li>
+									<li class="filter-item">
+										<label for="fat-less-30" class="style-c1 control">
+											<input class="control-input visually-hidden" type="radio" name="fat" value="до 30%" id="fat-less-30">
+											<span class="radio"></span>
+											<span class="text-fat">до 30%</span>
+										</label>
+									</li>
+									<li class="filter-item">
+										<label for="fat-more-30" class="style-c1 control">
+											<input class="control-input visually-hidden" type="radio" name="fat" value="выше 30%" id="fat-more-30">
+											<span class="radio"></span>
+											<span>выше 30%</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter">
+							<label class="filter-title style-c1">Наполнители:</label>
+							<div class="filter-wrapper">
+								<ul class="filter-list fillings">
+									<li class="filter-item">
+										<label class="style-c1 control" for="choco-filling">
+											<input class="control-input visually-hidden" type="checkbox" name="choco-filling" id="choco-filling" checked>
+											<span class="checkbox"></span>
+											<span class="text-filling">шоколадные</span>
+										</label>
+									</li>
+									<li class="filter-item">
+										<label class="style-c1 control" for="sugar-filling">
+											<input class="control-input visually-hidden" type="checkbox" name="sugar-filling" id="sugar-filling" checked>
+											<span class="checkbox"></span>
+											<span class="text-filling">сахарные посыпки</span>
+										</label>
+									</li>
+									<li class="filter-item">
+										<label class="style-c1 control" for="fruit-filling">
+											<input class="control-input visually-hidden" type="checkbox" name="fruit-filling" id="fruit-filling">
+											<span class="checkbox"></span>
+											<span class="text-filling"></span>фрукты</span>
+										</label>
+									</li>
+									<li class="filter-item">
+										<label for="syrop-filling" class="style-c1 control">
+											<input class="control-input visually-hidden" type="checkbox" name="syrop-filling" id="syrop-filling">
+											<span class="checkbox"></span>
+											<span class="text-filling">сиропы</span>
+										</label>
+									</li>
+									<li class="filter-item">
+										<label for="jam-filling" class="style-c1 control">
+											<input class="control-input visually-hidden" type="checkbox" name="jam-filling" id="jam-filling">
+											<span class="checkbox"></span>
+											<span class="text-filling">джемы</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button class="btn-light btn filters-btn" type="submit">Применить</button>
+					</fieldset>
 				</form>
-			</div>
 			<ul class="product-list">
 				<li class="product-list-item">
 					<a class="product-link" href="#">
@@ -344,11 +459,11 @@
 			<div class="catalog-more">
 				<a class="show-more btn-general btn" href="#">Показать еще</a>
 				<ul class="catalog-pagination">
-					<li class="catalog-pagination-item arrow">
-						<a class="catalog-pagination-link" href="#">
-							<svg class="pgn-btn-arrow" width="7" height="14" aria-hidden="true" viewBox="0 0 7 10" focusable="false" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
-							]</svg>
+					<li class="catalog-pagination-item">
+						<a class="catalog-pagination-link arrow disabled" href="#">
+							<svg class="arrow-pagination-icon left" width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.13526 0.864696C0.875566 0.604997 0.454511 0.604997 0.194813 0.864696C-0.0648862 1.12439 -0.0648862 1.54545 0.194813 1.80515L4.39609 6.00643L0.194774 10.2077C-0.0649247 10.4674 -0.0649247 10.8885 0.194774 11.1482C0.454473 11.4079 0.875527 11.4079 1.13523 11.1482L5.80394 6.47949C5.80489 6.47855 5.80583 6.47761 5.80678 6.47666C6.06648 6.21696 6.06648 5.79591 5.80678 5.53621L1.13526 0.864696Z"/>
+								</svg>
 							<span class="visually-hidden">Предыдущая страница</span>
                         </a>
 					</li>
@@ -367,11 +482,11 @@
 					<li class="catalog-pagination-item">
 						<a class="catalog-pagination-link" href="#">5</a>
 					</li>
-					<li class="catalog-pagination-item arrow">
-						<a class="catalog-pagination-link" href="#">
-							<svg class="pgn-btn-arrow" width="7" height="14" aria-hidden="true" viewBox="0 0 7 10" focusable="false" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.1352 0.864757C0.875505 0.605058 0.45445 0.605058 0.194751 0.864757C-0.0649472 1.12446 -0.0649472 1.54551 0.194751 1.80521L4.39603 6.00649L0.194713 10.2078C-0.0649858 10.4675 -0.0649858 10.8886 0.194713 11.1483C0.454412 11.408 0.875466 11.408 1.13516 11.1483L5.80388 6.47955C5.80483 6.47861 5.80577 6.47767 5.80672 6.47672C6.06642 6.21702 6.06642 5.79597 5.80672 5.53627L1.1352 0.864757Z"></path>
-							]</svg>
+					<li class="catalog-pagination-item">
+						<a class="catalog-pagination-link arrow" href="#">
+							<svg class="arrow-pagination-icon" width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.13526 0.864696C0.875566 0.604997 0.454511 0.604997 0.194813 0.864696C-0.0648862 1.12439 -0.0648862 1.54545 0.194813 1.80515L4.39609 6.00643L0.194774 10.2077C-0.0649247 10.4674 -0.0649247 10.8885 0.194774 11.1482C0.454473 11.4079 0.875527 11.4079 1.13523 11.1482L5.80394 6.47949C5.80489 6.47855 5.80583 6.47761 5.80678 6.47666C6.06648 6.21696 6.06648 5.79591 5.80678 5.53621L1.13526 0.864696Z"/>
+								</svg>
 							<span class="visually-hidden">Следующая страница</span>
             			</a>
 					</li>

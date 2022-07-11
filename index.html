@@ -20,7 +20,24 @@
 			<div class="nav-lists">
 				<ul class="nav-list style-p3">
 					<li class="nav-item">
-						<a class="nav-link" href="catalog.html">Каталог</a>
+						<a class="nav-link catalog" href="catalog.html">Каталог</a>
+						<ul class="nav-submenu style-c1">
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Новинки</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Сливочное</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Щербет</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Фруктовый лед</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a class="nav-submenu-item-link" href="catalog.html">Мелорин</a>
+							</li>
+						</ul>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href=#>Доставка и оплата</a>
@@ -40,6 +57,11 @@
 							</svg>
 							<span class="visually-hidden">Поиск</span>
 						</a>
+						<form class="search-form style-p3">
+							<label class="form-label visually-hidden" for="seach">Ключевое слово</label>
+							<input type="text" class="field search" id="search" placeholder="Поиск по сайту">
+							<button class="clear-btn"><span class="visually-hidden">Очистить</span></button>
+						</form>
 					</li>
 					<li class="nav-item btn-style">
 						<a class="nav-link-user login-link" href="#">
@@ -48,6 +70,22 @@
 								</svg>
 								Вход
 						</a>
+						<div class="login-popover">
+							<p class="style-h3">Личный кабинет</p>
+							<form class="login-form">
+								<fieldset class="login-form-fieldset">
+									<label for="login-email-field" class="login-email visually-hidden">Имейл</label>
+									<input class="login-email-field field" type="email" id="login-email-field" placeholder="email@example.com" required>
+									<label for="login-password-field" class="login-password visually-hidden" placeholder="Пароль" required>Пароль</label>
+									<input class="login-password-field field" type="password" id="login-password-field">
+								</fieldset>
+								<button class="btn btn-pink login-btn">Войти</button>
+								<div class="login-links">
+									<a class="login-link style-c1" href="#">Забыли пароль?</a>
+									<a class="login-link style-c1" href="#">Регистрация</a>
+								</div>
+							</form>
+						</div>
 					</li>
 					<li class="nav-item btn-style">
 						<a class="nav-link-user cart-link" href="#">
@@ -56,6 +94,37 @@
 							</svg>
 							<span class="visually-hidden">Корзина</span>2 товара
 						</a>
+						<div class="cart-popover-full">
+							<p class="style-h3 cart-h">Корзина</p>
+							<ul class="cart-product-list">
+								<li class="cart-product-item">
+									<img class="cart-product-image" src="images/Raspberry-product-list.png" width="46px" height="46px" alt="Малинка">
+									<div class="cart-name-quantity">
+										<p class="cart-name style-h5">Малинка</p>
+										<p class="cart-quantity-price style-c1"><span class="cart-quantity">1 кг</span> х <span class="cart-price">310 &#8381;</span></p>
+									</div>
+									<p class="cart-sum style-h5">310 &#8381;</p>
+									<button class="cart-delete"><span class="visually-hidden">Удалить из корзины</span></button>
+								</li>
+								<li class="cart-product-item">
+									<img class="cart-product-image" src="images/Bubble-gum-product-list.png" width="46px" height="46px" alt="Бабл-гам">
+									<div class="cart-name-quantity">
+										<p class="cart-name style-h5">Бабл-гам</p>
+										<p class="cart-quantity-price style-c1"><span class="cart-quantity">1,5 кг</span> х <span class="cart-price">480 &#8381;</span></p>
+									</div>
+									<p class="cart-sum style-h5">480 &#8381;</p>
+									<button class="cart-delete"><span class="visually-hidden">Удалить из корзины</span></button>
+								</li>
+							</ul>
+							<div class="cart-btn-total">
+								<button class="btn btn-pink cart-btn">Оформить заказ</button>
+								<p class="cart-total style-h5">Итого: 790 &#8381;</p>
+							</div>
+						</div>
+						<div class="cart-popover-empty">
+							<p class="style-h3 cart-empty-h">Ваша корзина пока пуста</p>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -74,6 +143,20 @@
 				<ul class="slide-images">
 					<li class="slide-image current">
 						<img src="images/Sreawberry-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
+						<div class="slider-buttons">
+							<button class="slider-btn prev">
+								<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
+								</svg>
+								<span class="visually-hidden">Предыдущее фото</span>
+							</button>
+							<button class="slider-btn next">
+								<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
+								</svg>
+								<span class="visually-hidden">Следующее фото</span>
+							</button>
+						</div>
 					</li>
 					<li class="slide-image">
 						<img src="images/Banana-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
@@ -90,13 +173,27 @@
 					<a class="btn-general btn btn-order" href="#">Заказать</a>
 				</div>
 				<ul class="slide-images">
-					<li class="slide-image current">
+					<li class="slide-image current slide-2">
 						<img src="images/Banana-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
+						<div class="slider-buttons">
+							<button class="slider-btn prev">
+								<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
+								</svg>
+								<span class="visually-hidden">Предыдущее фото</span>
+							</button>
+							<button class="slider-btn next">
+								<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
+								</svg>
+								<span class="visually-hidden">Следующее фото</span>
+							</button>
+						</div>
 					</li>
-					<li class="slide-image">
+					<li class="slide-image slide-2">
 						<img src="images/Caramel-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
 					</li>
-					<li class="slide-image">
+					<li class="slide-image slide-2">
 						<img src="images/Strawberry-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 					</li>
 				</ul>
@@ -108,30 +205,30 @@
 					<a class="btn-general btn btn-order" href="#">Заказать</a>
 				</div>
 				<ul class="slide-images">
-					<li class="slide-image current">
+					<li class="slide-image current slide-3">
 						<img src="images/Caramel-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
+						<div class="slider-buttons">
+							<button class="slider-btn prev">
+								<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
+								</svg>
+								<span class="visually-hidden">Предыдущее фото</span>
+							</button>
+							<button class="slider-btn next">
+								<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
+								</svg>
+								<span class="visually-hidden">Следующее фото</span>
+							</button>
+						</div>
 					</li>
-					<li class="slide-image">
+					<li class="slide-image slide-3">
 						<img src="images/Strawberry-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
 					</li>
-					<li class="slide-image next">
+					<li class="slide-image slide-3">
 						<img src="images/Banana-slider-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 					</li>
 				</ul>
-			</div>
-			<div class="slider-buttons">
-				<button class="slider-btn prev">
-					<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
-					]</svg>
-					<span class="visually-hidden">Предыдущее фото</span>
-				</button>
-				<button class="slider-btn next">
-					<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="-2 -1 8 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M1.1352 0.864757C0.875505 0.605058 0.45445 0.605058 0.194751 0.864757C-0.0649472 1.12446 -0.0649472 1.54551 0.194751 1.80521L4.39603 6.00649L0.194713 10.2078C-0.0649858 10.4675 -0.0649858 10.8886 0.194713 11.1483C0.454412 11.408 0.875466 11.408 1.13516 11.1483L5.80388 6.47955C5.80483 6.47861 5.80577 6.47767 5.80672 6.47672C6.06642 6.21702 6.06642 5.79597 5.80672 5.53627L1.1352 0.864757Z"></path>
-					]</svg>
-					<span class="visually-hidden">Следующее фото</span>
-				</button>
 			</div>
 			<div class="pagination-social">
 				<div class="slider-pagination">
@@ -295,7 +392,7 @@
 					<form class="subscribe-form">
 						<div class="subscribe-form-email">
 							<label class="form-label" for="subscribe-email"><span class="visually-hidden">Ваш имейл</span></label>
-							<input type="email" class="field" id="subscribe-email" name="subscribe-email" placeholder="email@example.com">
+							<input type="email" class="field" id="subscribe-email" name="subscribe-email" placeholder="email@example.com" required>
 						</div>
 						<button class="btn-pink btn submit" type="submit">Отправить</button>
 					</form>
@@ -307,33 +404,33 @@
 				<h2 class="style-h2 delivery-discr-h">Доставка любимого мороженого на дом</h2>
 				<p class="style-p2 delivery-discr-p">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
 			</div>
-			<div class="delivery-form-wrapper">
-				<p class="style-p2 delivery-form-p">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
+			<div class="delivery-form-wrapper style-p2">
+				<p class="delivery-form-p">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
 				<form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-					<div class="form-field delivery-date">
-						<label class="form-label style-pb" for="delivery-date">Дата
-							<button class="info">
-								<span class="visually-hidden">Посмотреть дополнительную информацию</span>
-							</button>
-						</label>
-						<input class="field" type="text" class="field" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-					</div>
-					<div class="form-field delivery-phone">
-						<label class="form-label style-pb" for="delivery-phone">Телефон
-							<button class="info">
-								<span class="visually-hidden">Посмотреть дополнительную информацию</span>
-							</button>
-						</label>
-						<input class="field" type="text" class="field" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
-					</div>
-					<div class="form-field delivery-address">
-						<label class="form-label style-pb" for="delivery-address">Адрес
-							<button class="info">
-								<span class="visually-hidden">Посмотреть дополнительную информацию</span>
-							</button>
-						</label>
-						<input class="field" type="text" id="delivery-address" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
-					</div>
+					<fieldset class="form-fieldset delivery-form">
+						<legend class="visually-hidden">Доставка</legend>
+						<div class="field-label delivery-date">
+							<label class="form-label style-pb" for="delivery-date">Дата</label>
+								<button class="info">
+									<span class="visually-hidden">Посмотреть дополнительную информацию</span>
+								</button>
+							<input class="field" type="text" class="field" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
+						</div>
+						<div class="field-label delivery-phone">
+							<label class="form-label style-pb" for="delivery-phone">Телефон</label>
+								<button class="info">
+									<span class="visually-hidden">Посмотреть дополнительную информацию</span>
+								</button>
+							<input class="field" type="text" class="field" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
+						</div>
+						<div class="field-label delivery-address">
+							<label class="form-label style-pb" for="delivery-address">Адрес</label>
+								<button class="info">
+									<span class="visually-hidden">Посмотреть дополнительную информацию</span>
+								</button>
+							<input class="field" type="text" id="delivery-address" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" required>
+						</div>
+					</fieldset>
 					<button class="btn-pink btn delivery-btn" type="submit">Отправить</button>
 				</form>
 			</div>
