@@ -7,23 +7,27 @@
 		<meta name="description" content="Интернет-магазин натурального мороженого от производителя">
 		<meta name="keywords" content="мороженое заказать онлайн, мороженое с доставкой, мороженое оптом">
 		<link rel="stylesheet" href="styles.css">
-		<link rel="icon" href="favicon.ico" rel="icon"><!-- 32×32 -->
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon-32.png">
-		<link rel="icon" type="image/png" sizes="152x152" href="/images/Favicon-152.png">
+		<link rel="icon" href="favicon.ico"><!-- 32×32 -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/Favicon-32.png">
+		<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/Favicon-152.png">
 		<link rel="manifest" href="manifest.webmanifest">
 	</head>
 
 	<body>
+    <!-- Header -->
 		<header class="header">
 			<nav class="navigation">
 				<a class="nav-link logo" href="index.html">
-					<span class="visually-hidden">Главная страница</span>
-					<img src="images/Logo.svg" alt="Главная" width="137px" height="55.72px">
+					<span class="visually-hidden">Главная страница.</span>
+					<img src="images/logos/Logo.svg" alt="Главная" width="137" height="56">
 				</a>
 				<div class="nav-lists">
+          <!-- Navigation bar left -->
 					<ul class="nav-list style-p3">
 						<li class="nav-item">
+              <!-- Add 'current' class for <a class="nav-link"> to highlight current link in the navigation menu -->
 							<a class="nav-link catalog current" href="catalog.html">Каталог</a>
+              <!-- Add 'open' class to show submenu -->
 							<ul class="nav-submenu style-c1">
 								<li class="nav-submenu-item">
 									<a class="nav-submenu-item-link" href="catalog.html">Новинки</a>
@@ -49,6 +53,7 @@
 							<a class="nav-link" href=#>О компании</a>
 						</li>
 					</ul>
+          <!-- Navigation bar right -->
 					<ul class="nav-list nav-right style-c1">
 						<li class="nav-item nav-phone">
 							<a class="nav-link nav-phone style-pb" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -58,12 +63,14 @@
 								<svg class="nav-icon search-icon" aria-hidden="true" width="16" height="16" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M2.66341 7.33008C2.66341 4.75275 4.75275 2.66341 7.33008 2.66341C9.90741 2.66341 11.9967 4.75275 11.9967 7.33008C11.9967 8.58735 11.4995 9.7285 10.691 10.5676C10.6682 10.5852 10.6462 10.6044 10.6253 10.6253C10.6044 10.6463 10.5852 10.6682 10.5676 10.6911C9.72847 11.4996 8.58734 11.9967 7.33008 11.9967C4.75275 11.9967 2.66341 9.90741 2.66341 7.33008ZM11.0752 12.018C10.0487 12.8391 8.74675 13.3301 7.33008 13.3301C4.01637 13.3301 1.33008 10.6438 1.33008 7.33008C1.33008 4.01637 4.01637 1.33008 7.33008 1.33008C10.6438 1.33008 13.3301 4.01637 13.3301 7.33008C13.3301 8.74676 12.8391 10.0488 12.018 11.0752L14.4681 13.5253C14.7285 13.7857 14.7285 14.2078 14.4681 14.4682C14.2078 14.7285 13.7857 14.7285 13.5253 14.4682L11.0752 12.018Z"/>
 								</svg>
-								<span class="visually-hidden">Поиск</span>
+								<span class="visually-hidden">Поиск.</span>
 							</a>
-							<form class="search-form style-p3">
-								<label class="form-label" for="seach"><span class="visually-hidden">Ключевое слово</span></label>
-								<input type="text" class="field search" id="search" placeholder="Поиск по сайту">
-								<button class="clear-btn" type="button"><span class="visually-hidden">Очистить</span></button>
+              <!-- Add 'open' class to show search-popover -->
+							<form class="search-form style-p3" action="https://echo.htmlacademy.ru" method="get">
+								<label class="form-label" for="search"><span class="visually-hidden">Ключевое слово.</span></label>
+								<input class="field search" type="text" id="search" name="search" placeholder="Поиск по сайту">
+              <!-- Add 'displayed' class to show the btn when typing -->
+								<button class="clear-btn" type="button"><span class="visually-hidden">Очистить.</span></button>
 							</form>
 						</li>
 						<li class="nav-item btn-style">
@@ -73,16 +80,18 @@
 									</svg>
 									Вход
 							</a>
-							<div class="login-popover">
+							<!-- Add 'open' class to show login-popover -->
+              <div class="login-popover">
 								<p class="style-h3">Личный кабинет</p>
-								<form class="login-form">
+								<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 									<fieldset class="login-form-fieldset">
-										<label for="login-email-field" class="login-email visually-hidden">Имейл</label>
+										<label class="login-email visually-hidden" for="login-email-field">Имейл.</label>
+                    <!-- Add 'error' class to <input class="field"> if entered value is invalid-->
 										<input class="login-email-field field" type="email" id="login-email-field" placeholder="email@example.com" required>
-										<label for="login-password-field" class="login-password visually-hidden">Пароль</label>
+										<label class="login-password visually-hidden" for="login-password-field">Пароль.</label>
 										<input class="login-password-field field" type="password" id="login-password-field" placeholder="Пароль" required>
 									</fieldset>
-									<button class="btn btn-pink login-btn" type="button">Войти</button>
+									<button class="btn btn-pink login-btn" type="submit">Войти</button>
 									<div class="login-links">
 										<a class="login-link style-c1" href="#">Забыли пароль?</a>
 										<a class="login-link style-c1" href="#">Регистрация</a>
@@ -97,33 +106,35 @@
 								</svg>
 								<span class="visually-hidden">Корзина</span>2 товара
 							</a>
+              <!-- Add 'open' class to show cart-popover, if there are some products -->
 							<div class="cart-popover-full">
 								<p class="style-h3 cart-h">Корзина</p>
 								<ul class="cart-product-list">
 									<li class="cart-product-item">
-										<img class="cart-product-image" src="images/Raspberry-product-list.png" width="46px" height="46px" alt="Малинка">
+										<img class="cart-product-image" src="images/product-images/Strawberry-product-list.png" width="46" height="46" alt="Малинка">
 										<div class="cart-name-quantity">
 											<p class="cart-name style-h5">Малинка</p>
 											<p class="cart-quantity-price style-c1"><span class="cart-quantity">1 кг</span> х <span class="cart-price">310 &#8381;</span></p>
 										</div>
 										<p class="cart-sum style-h5">310 &#8381;</p>
-										<button class="cart-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
+										<button class="cart-delete" type="button"><span class="visually-hidden">Удалить из корзины.</span></button>
 									</li>
 									<li class="cart-product-item">
-										<img class="cart-product-image" src="images/Bubble-gum-product-list.png" width="46px" height="46px" alt="Бабл-гам">
+										<img class="cart-product-image" src="images/product-images/Bubble-gum-product-list.png" width="46" height="46" alt="Бабл-гам">
 										<div class="cart-name-quantity">
 											<p class="cart-name style-h5">Бабл-гам</p>
 											<p class="cart-quantity-price style-c1"><span class="cart-quantity">1,5 кг</span> х <span class="cart-price">480 &#8381;</span></p>
 										</div>
 										<p class="cart-sum style-h5">480 &#8381;</p>
-										<button class="cart-delete" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
+										<button class="cart-delete" type="button"><span class="visually-hidden">Удалить из корзины.</span></button>
 									</li>
 								</ul>
 								<div class="cart-btn-total">
-									<button class="btn btn-pink cart-btn" type="button">Оформить заказ</button>
+									<button class="btn btn-pink cart-btn" type="submit">Оформить заказ</button>
 									<p class="cart-total style-h5">Итого: 790 &#8381;</p>
 								</div>
 							</div>
+              <!-- Add 'open' class to show cart-popover, if the cart is empty -->
 							<div class="cart-popover-empty">
 								<p class="style-h3 cart-empty-h">Ваша корзина пока пуста</p>
 							</div>
@@ -133,8 +144,9 @@
 			</nav>
 		</header>
 		<main class="main-catalog main-container">
-			<h1 class="visually-hidden">Каталог продукции онлайн и офлайн магазина мороженого Glacy Shop</h1>
+			<h1 class="visually-hidden">Каталог продукции онлайн и офлайн магазина мороженого Glacy Shop.</h1>
 			<section class="catalog">
+        <!-- Breadcrumb menu -->
 				<ul class="breadcrumb-menu">
 					<li class="breadcrumb-menu-item">
 						<a class="breadcrumb-link style-cb" href="index.html">Главная</a>
@@ -144,9 +156,10 @@
 					</li>
 				</ul>
 				<h2 class="style-h2 catalog-h2">Сливочное мороженое</h2>
+        <!-- Filters -->
 					<form class="filters" action="https://echo.htmlacademy.ru/" method="get">
 						<fieldset class="catalog-form-fieldset">
-							<legend class="visually-hidden">Фильтр</legend>
+							<legend class="visually-hidden">Фильтр.</legend>
 							<div class="filter">
 								<label class="style-c1 filter-title" for="sort">Сортировка:</label>
 									<select class="select-control style-c1" name="sort" id="sort">
@@ -180,28 +193,28 @@
 								<div class="filter-wrapper">
 									<ul class="filter-list">
 										<li class="filter-item">
-											<label for="fat-0" class="style-c1 control">
+											<label class="style-c1 control" for="fat-0">
 												<input class="control-input visually-hidden" type="radio" name="fat" value="0%" id="fat-0">
 												<span class="radio"></span>
 												<span class="text-fat">0%</span>
 											</label>
 										</li>
 										<li class="filter-item">
-											<label for="fat-less-10" class="style-c1 control">
+											<label class="style-c1 control" for="fat-less-10">
 												<input class="control-input visually-hidden" type="radio" name="fat" value="до 10%" id="fat-less-10" checked>
 												<span class="radio"></span>
 												<span class="text-fat">до 10%</span>
 											</label>
 										</li>
 										<li class="filter-item">
-											<label for="fat-less-30" class="style-c1 control">
+											<label class="style-c1 control" for="fat-less-30">
 												<input class="control-input visually-hidden" type="radio" name="fat" value="до 30%" id="fat-less-30">
 												<span class="radio"></span>
 												<span class="text-fat">до 30%</span>
 											</label>
 										</li>
 										<li class="filter-item">
-											<label for="fat-more-30" class="style-c1 control">
+											<label class="style-c1 control" for="fat-more-30">
 												<input class="control-input visually-hidden" type="radio" name="fat" value="выше 30%" id="fat-more-30">
 												<span class="radio"></span>
 												<span>выше 30%</span>
@@ -216,35 +229,35 @@
 									<ul class="filter-list fillings">
 										<li class="filter-item">
 											<label class="style-c1 control" for="choco-filling">
-												<input class="control-input visually-hidden" type="checkbox" name="choco-filling" id="choco-filling" checked>
+												<input class="control-input visually-hidden" type="checkbox" name="filling" value="choco-filling" id="choco-filling" checked>
 												<span class="checkbox"></span>
 												<span class="text-filling">шоколадные</span>
 											</label>
 										</li>
 										<li class="filter-item">
 											<label class="style-c1 control" for="sugar-filling">
-												<input class="control-input visually-hidden" type="checkbox" name="sugar-filling" id="sugar-filling" checked>
+												<input class="control-input visually-hidden" type="checkbox" name="filling" value="sugar-filling" id="sugar-filling" checked>
 												<span class="checkbox"></span>
 												<span class="text-filling">сахарные посыпки</span>
 											</label>
 										</li>
 										<li class="filter-item">
 											<label class="style-c1 control" for="fruit-filling">
-												<input class="control-input visually-hidden" type="checkbox" name="fruit-filling" id="fruit-filling">
+												<input class="control-input visually-hidden" type="checkbox" name="filling" value="fruit-filling" id="fruit-filling">
 												<span class="checkbox"></span>
 												<span class="text-filling">фрукты</span>
 											</label>
 										</li>
 										<li class="filter-item">
-											<label for="syrop-filling" class="style-c1 control">
-												<input class="control-input visually-hidden" type="checkbox" name="syrop-filling" id="syrop-filling">
+											<label class="style-c1 control" for="syrop-filling">
+												<input class="control-input visually-hidden" type="checkbox" name="filling" value="syrop-filling" id="syrop-filling">
 												<span class="checkbox"></span>
 												<span class="text-filling">сиропы</span>
 											</label>
 										</li>
 										<li class="filter-item">
-											<label for="jam-filling" class="style-c1 control">
-												<input class="control-input visually-hidden" type="checkbox" name="jam-filling" id="jam-filling">
+											<label class="style-c1 control" for="jam-filling">
+												<input class="control-input visually-hidden" type="checkbox" name="filling" value="jam-filling" id="jam-filling">
 												<span class="checkbox"></span>
 												<span class="text-filling">джемы</span>
 											</label>
@@ -255,10 +268,11 @@
 							<button class="btn-light btn filters-btn" type="submit">Применить</button>
 						</fieldset>
 					</form>
+        <!-- Catalog product list -->
 				<ul class="product-list">
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Raspberry-product-list.png" width="168" height="168" alt="Малинка">
+							<img class="product-image" src="images/product-images/Raspberry-product-list.png" width="168" height="168" alt="Малинка">
 							<div class="product-info">
 									<h3 class="product-name style-h4">Малинка</h3>
 									<p class="product-description style-p2">Сливочное мороженое с малиновым джемом</p>
@@ -275,7 +289,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Pistachio-product-list.png" width="168" height="168" alt="Фисташка">
+							<img class="product-image" src="images/product-images/Pistachio-product-list.png" width="168" height="168" alt="Фисташка">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Фисташка</h3>
 								<p class="product-description style-p2">Фисташковый пломбир с кусочками шоколада</p>
@@ -292,7 +306,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Blueberry-product-list.png" width="168" height="168" alt="Черника">
+							<img class="product-image" src="images/product-images/Blueberry-product-list.png" width="168" height="168" alt="Черника">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Черника</h3>
 								<p class="product-description style-p2">Крем-брюле с&nbsp;черничным джемом</p>
@@ -309,7 +323,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Bubble-gum-product-list.png" width="168" height="168" alt="Бабл-гам">
+							<img class="product-image" src="images/product-images/Bubble-gum-product-list.png" width="168" height="168" alt="Бабл-гам">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Бабл-гам</h3>
 								<p class="product-description style-p2">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
@@ -326,7 +340,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Blackberry-product-list.png" width="168" height="168" alt="Ежевика">
+							<img class="product-image" src="images/product-images/Blackberry-product-list.png" width="168" height="168" alt="Ежевика">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Ежевика</h3>
 								<p class="product-description style-p2">Сливочное мороженое с ежевичным джемом</p>
@@ -343,7 +357,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Banana-product-list.png" width="168" height="168" alt="Банан">
+							<img class="product-image" src="images/product-images/Banana-product-list.png" width="168" height="168" alt="Банан">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Банан</h3>
 								<p class="product-description style-p2">Сливочный пломбир с&nbsp;банановым вкусом</p>
@@ -360,7 +374,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Choco-product-list.png" width="168" height="168" alt="Лимон">
+							<img class="product-image" src="images/product-images/Choco-product-list.png" width="168" height="168" alt="Лимон">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Шоколадка</h3>
 								<p class="product-description style-p2">Классический шоколадный пломбир</p>
@@ -377,7 +391,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Strawberry-product-list.png" width="168" height="168" alt="Клубничка">
+							<img class="product-image" src="images/product-images/Strawberry-product-list.png" width="168" height="168" alt="Клубничка">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Клубничка</h3>
 								<p class="product-description style-p2">Сливочный пломбир с&nbsp;клубничным вкусом</p>
@@ -394,7 +408,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Lemon-product-list.png" width="168" height="168" alt="Лимон">
+							<img class="product-image" src="images/product-images/Lemon-product-list.png" width="168" height="168" alt="Лимон">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Лимон</h3>
 								<p class="product-description style-p2">Освежающий лимонный сорбет</p>
@@ -411,7 +425,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/mentol-product-list.png" width="168" height="168" alt="Ментол">
+							<img class="product-image" src="images/product-images/mentol-product-list.png" width="168" height="168" alt="Ментол">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Ментол</h3>
 								<p class="product-description style-p2">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
@@ -428,7 +442,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Nut-product-list.png" width="168" height="168" alt="Орешек">
+							<img class="product-image" src="images/product-images/Nut-product-list.png" width="168" height="168" alt="Орешек">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Орешек</h3>
 								<p class="product-description style-p2">Фисташковый пломбир с шоколадным сиропом</p>
@@ -445,7 +459,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/Cream-product-list.png" width="168" height="168" alt="Крем-брюле">
+							<img class="product-image" src="images/product-images/Cream-product-list.png" width="168" height="168" alt="Крем-брюле">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Крем-брюле</h3>
 								<p class="product-description style-p2">Классическое крем-брюле</p>
@@ -499,6 +513,7 @@
 				</div>
 			</section>
 		</main>
+    <!-- Catalog footer -->
 		<footer class="footer catalog-footer">
 			<ul class="social footer">
 				<li class="social-item">
@@ -506,7 +521,7 @@
 						<svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5285 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859Z"/>
 						</svg>
-						<span class="visually-hidden">Телеграм</span>
+						<span class="visually-hidden">Телеграм.</span>
 					</a>
 				</li>
 				<li class="social-item">
@@ -514,7 +529,7 @@
 						<svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.5884 14.9749H11.8711C11.8711 14.9749 10.2885 15.0584 8.89479 13.7867C7.37486 12.3995 6.03249 9.64702 6.03249 9.64702C6.03249 9.64702 5.95511 9.46654 6.03917 9.3793C6.13366 9.28121 6.39106 9.27493 6.39106 9.27493L8.10567 9.26508C8.10567 9.26508 8.26727 9.28878 8.38294 9.36317C8.47824 9.42457 8.53167 9.53936 8.53167 9.53936C8.53167 9.53936 8.80878 10.1536 9.17581 10.7093C9.89212 11.7942 10.2258 12.0315 10.469 11.9152C10.8233 11.7458 10.7171 10.3816 10.7171 10.3816C10.7171 10.3816 10.7236 9.88646 10.5387 9.66601C10.3955 9.4951 10.1254 9.44527 10.0062 9.43128C9.90971 9.42 10.0681 9.22367 10.2733 9.13558C10.5819 9.00308 11.1268 8.99551 11.7706 9.00136C12.2722 9.00579 12.4165 9.0332 12.6127 9.07475C13.0677 9.17105 13.0536 9.47963 13.0229 10.1454C13.0138 10.3444 13.0032 10.5752 13.0032 10.8418C13.0032 10.9018 13.0012 10.9657 12.9991 11.0315C12.9885 11.3725 12.9763 11.7629 13.2324 11.908C13.3637 11.9822 13.6849 11.9191 14.4884 10.7233C14.8693 10.1566 15.1549 9.49024 15.1549 9.49024C15.1549 9.49024 15.2173 9.37145 15.3142 9.32048C15.4134 9.26851 15.5472 9.2845 15.5472 9.2845L17.3515 9.27465C17.3515 9.27465 17.8937 9.21796 17.9815 9.43242C18.0735 9.65758 17.7788 10.1833 17.0417 11.0444C16.3463 11.8567 16.006 12.1587 16.0328 12.4236C16.0527 12.6198 16.2739 12.7957 16.7015 13.1436C17.5897 13.8661 17.8264 14.2455 17.8827 14.3357C17.8872 14.343 17.8906 14.3484 17.893 14.3519C18.2905 14.9296 17.4522 14.9749 17.4522 14.9749L15.8497 14.9944C15.8497 14.9944 15.5053 15.0543 15.0521 14.7814C14.8151 14.6388 14.5833 14.406 14.3626 14.1842C14.0251 13.8451 13.7131 13.5316 13.4469 13.6056C13.0002 13.7298 13.0143 14.5734 13.0143 14.5734C13.0143 14.5734 13.0175 14.7536 12.9157 14.8495C12.8051 14.954 12.5884 14.9749 12.5884 14.9749Z"/>
 						</svg>
-						<span class="visually-hidden">ВКонтакте</span>
+						<span class="visually-hidden">ВКонтакте.</span>
 					</a>
 				</li>
 				<li class="social-item">
@@ -522,12 +537,13 @@
 						<svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.0037 11.7913L11.1963 10.4813C10.9513 10.3675 10.75 10.495 10.75 10.7662V13.2338C10.75 13.505 10.9513 13.6325 11.1963 13.5188L14.0025 12.2087C14.2488 12.0938 14.2487 11.9063 14.0037 11.7913ZM12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM12 16.875C5.8575 16.875 5.75 16.3213 5.75 12C5.75 7.67875 5.8575 7.125 12 7.125C18.1425 7.125 18.25 7.67875 18.25 12C18.25 16.3213 18.1425 16.875 12 16.875Z"/>
 						</svg>
-						<span class="visually-hidden">Ютьюб</span>
+						<span class="visually-hidden">Ютьюб.</span>
 					</a>
 				</li>
 			</ul>
 			<ul class="footer-links style-c1">
 				<li class="footer-links-item style-cb">
+          <!-- Add 'current' class for <a class="footer-link"> to highlight current link -->
 					<a class="footer-link highlight" href="#">Для поставщиков</a>
 				</li>
 				<li class="footer-links-item">
@@ -541,7 +557,7 @@
 				</li>
 			</ul>
 			<div class="footer-copyright style-c2 footer-copyright-caption">
-				<a href="https://htmlacademy.ru/"><img class="footer-copyright-logo" src="images/logo_htmlacademy.svg" width="93" height="26.71" alt="логотип HTML-Academy"></a>
+				<a href="https://htmlacademy.ru/"><img class="footer-copyright-logo" src="images/logos/logo_htmlacademy.svg" width="93" height="27" alt="логотип HTML-Academy"></a>
 				<p>Сделано в <a class="footer-copyright-caption" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
 			</div>
 		</footer>
