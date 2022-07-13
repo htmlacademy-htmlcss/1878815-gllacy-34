@@ -2144,7 +2144,7 @@ form.filters {
   left: 12px;
   width: 16px;
   height: 16px;
-  background-image: url("/images/icons/Heart-fill.svg");
+  background-image: url("/images/icons/heart-fill.svg");
   background-repeat: no-repeat;
 }
 
@@ -2162,7 +2162,7 @@ form.filters {
   left: 12px;
   width: 16px;
   height: 16px;
-  background-image: url("/images/icons/Heart-fill-white.svg");
+  background-image: url("/images/icons/heart-fill-white.svg");
   background-repeat: no-repeat;
 }
 
