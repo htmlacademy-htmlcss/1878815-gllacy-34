@@ -28,8 +28,6 @@ html {
 
 body {
   margin: 0 auto;
-  padding-left: 98px;
-  padding-right: 98px;
   width: 1170px;
   display: flex;
   flex-direction: column;
@@ -1764,6 +1762,8 @@ form.filters {
   height: 2px;
   background-color: #2d3440;
   border-radius: 2px;
+  left: 42px;
+  width: 56px;
 }
 
 .range-toggle {
