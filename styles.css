@@ -35,10 +35,6 @@ body {
   flex-direction: column;
   min-height: 100%;
   font-family: "Inter", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #2d3440;
   background-color: #feafc3;
 }
 
@@ -54,25 +50,27 @@ body {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  color: #2d3440;
 }
 
 .style-h2 {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  color: #2d3440;
 }
 
 .style-h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  color: #2d3440;
 }
 
 .style-h4 {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-decoration: none;
   color: #2d3440;
 }
 
@@ -80,12 +78,14 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  color: #2d3440;
 }
 
 .style-p1 {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  color: #2d3440;
 }
 
 .style-p2 {
@@ -1089,7 +1089,7 @@ div.field-label {
 /* Special offeting */
 
 .special-offering {
-  margin: 56px 0 21px;
+  margin: 58px 0 21px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1270,6 +1270,8 @@ div.field-label {
   padding: 24px;
   max-width: 100%;
   background-size: cover;
+  background-position: center center;
+  background-color: #ff7799;
 }
 
 .advantades-wrapper {
@@ -1359,6 +1361,7 @@ div.field-label {
   background-image: url("images/backgrounds/news.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ff7799;
   border-radius: 16px;
   max-width: 570px;
   padding: 32px 235px 32px 32px;
@@ -1384,6 +1387,7 @@ div.field-label {
   background-image: url("images/backgrounds/subscribe.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ff7799;
   border-radius: 16px;
   max-width: 570px;
   margin: 0;
@@ -1429,6 +1433,7 @@ div.field-label {
   background-image: url("images/backgrounds/delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ffcbd8;
   border-radius: 16px;
   padding: 64px 64px 64px 100px;
 }
@@ -1561,6 +1566,7 @@ form.delivery-form {
   background-image: url("images/backgrounds/contacts.jpg");
   background-position: center;
   background-size: cover;
+  background-color: #ff7799;
   padding: 64px 763px 64px 64px;
   max-width: 100%;
   min-height: 100%;
@@ -1629,14 +1635,14 @@ form.delivery-form {
   width: 14px;
   height: 14px;
   content: "";
-  background-image: url("images/chevrons-right.svg");
+  background-image: url("images/icons/chevrons-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 4px;
 }
 
 .catalog {
-  margin-top: 29px;
+  margin-top: 33px;
 }
 
 .catalog-h2 {
@@ -1909,7 +1915,7 @@ form.filters {
 .catalog-more {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 48px 0 72px;
+  margin: 52px 0 74px;
 }
 
 .catalog-pagination {
