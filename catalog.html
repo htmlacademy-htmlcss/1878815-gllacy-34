@@ -6,10 +6,10 @@
 		<title>Glacy Shop. Интернет-магазин мороженного Глейси</title>
 		<meta name="description" content="Интернет-магазин натурального мороженого от производителя">
 		<meta name="keywords" content="мороженое заказать онлайн, мороженое с доставкой, мороженое оптом">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="/styles/styles.css">
 		<link rel="icon" href="favicon.ico"><!-- 32×32 -->
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/Favicon-32.png">
-		<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/Favicon-152.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/favicon-152.png">
 		<link rel="manifest" href="manifest.webmanifest">
 	</head>
 
@@ -19,7 +19,7 @@
 			<nav class="navigation">
 				<a class="nav-link logo" href="index.html">
 					<span class="visually-hidden">Главная страница.</span>
-					<img src="images/logos/Logo.svg" alt="Главная" width="137" height="56">
+					<img src="images/logos/logo.svg" alt="Главная" width="137" height="56">
 				</a>
 				<div class="nav-lists">
           <!-- Navigation bar left -->
@@ -55,8 +55,8 @@
 					</ul>
           <!-- Navigation bar right -->
 					<ul class="nav-list nav-right style-c1">
-						<li class="nav-item nav-phone">
-							<a class="nav-link nav-phone style-pb" href="tel:+78005558628">+7 800 555-86-28</a>
+						<li class="nav-item">
+							<a class="nav-link style-pb tel" href="tel:+78005558628">+7 800 555-86-28</a>
 						</li>
 						<li class="nav-item btn-style">
 							<a class="nav-link-user search-link" href="#">
@@ -87,9 +87,9 @@
 									<fieldset class="login-form-fieldset">
 										<label class="login-email visually-hidden" for="login-email-field">Имейл.</label>
                     <!-- Add 'error' class to <input class="field"> if entered value is invalid-->
-										<input class="login-email-field field" type="email" id="login-email-field" placeholder="email@example.com" required>
+										<input class="login-email-field field" type="email" name="user-email" id="login-email-field" placeholder="email@example.com" required>
 										<label class="login-password visually-hidden" for="login-password-field">Пароль.</label>
-										<input class="login-password-field field" type="password" id="login-password-field" placeholder="Пароль" required>
+										<input class="login-password-field field" type="password" name="user-password" id="login-password-field" placeholder="Пароль" required>
 									</fieldset>
 									<button class="btn btn-pink login-btn" type="submit">Войти</button>
 									<div class="login-links">
@@ -111,7 +111,7 @@
 								<p class="style-h3 cart-h">Корзина</p>
 								<ul class="cart-product-list">
 									<li class="cart-product-item">
-										<img class="cart-product-image" src="images/product-images/Strawberry-product-list.png" width="46" height="46" alt="Малинка">
+										<img class="cart-product-image" src="images/product-images/strawberry-product-list.png" width="46" height="46" alt="Малинка">
 										<div class="cart-name-quantity">
 											<p class="cart-name style-h5">Малинка</p>
 											<p class="cart-quantity-price style-c1"><span class="cart-quantity">1 кг</span> х <span class="cart-price">310 &#8381;</span></p>
@@ -120,7 +120,7 @@
 										<button class="cart-delete" type="button"><span class="visually-hidden">Удалить из корзины.</span></button>
 									</li>
 									<li class="cart-product-item">
-										<img class="cart-product-image" src="images/product-images/Bubble-gum-product-list.png" width="46" height="46" alt="Бабл-гам">
+										<img class="cart-product-image" src="images/product-images/bubble-gum-product-list.png" width="46" height="46" alt="Бабл-гам">
 										<div class="cart-name-quantity">
 											<p class="cart-name style-h5">Бабл-гам</p>
 											<p class="cart-quantity-price style-c1"><span class="cart-quantity">1,5 кг</span> х <span class="cart-price">480 &#8381;</span></p>
@@ -130,7 +130,7 @@
 									</li>
 								</ul>
 								<div class="cart-btn-total">
-									<button class="btn btn-pink cart-btn" type="submit">Оформить заказ</button>
+									<a class="btn btn-pink cart-btn" href="#">Оформить заказ</a>
 									<p class="cart-total style-h5">Итого: 790 &#8381;</p>
 								</div>
 							</div>
@@ -178,10 +178,10 @@
 								<div class="filter-wrapper range">
 									<div class="range-scale">
 										<div class="range-bar" style="left: 42px; width: 56px">
-											<button class="range-toggle toggle-min">
+											<button class="range-toggle toggle-min" type="button">
 												<span class="visually-hidden">Изменить минимальную цену.</span>
 											</button>
-											<button class="range-toggle toggle-max">
+											<button class="range-toggle toggle-max" type="button">
 												<span class="visually-hidden">Изменить максимальную цену.</span>
 											</button>
 										</div>
@@ -272,7 +272,7 @@
 				<ul class="product-list">
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Raspberry-product-list.png" width="168" height="168" alt="Малинка">
+							<img class="product-image" src="images/product-images/raspberry-product-list.png" width="168" height="168" alt="Малинка">
 							<div class="product-info">
 									<h3 class="product-name style-h4">Малинка</h3>
 									<p class="product-description style-p2">Сливочное мороженое с малиновым джемом</p>
@@ -289,7 +289,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Pistachio-product-list.png" width="168" height="168" alt="Фисташка">
+							<img class="product-image" src="images/product-images/pistachio-product-list.png" width="168" height="168" alt="Фисташка">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Фисташка</h3>
 								<p class="product-description style-p2">Фисташковый пломбир с кусочками шоколада</p>
@@ -306,7 +306,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Blueberry-product-list.png" width="168" height="168" alt="Черника">
+							<img class="product-image" src="images/product-images/blueberry-product-list.png" width="168" height="168" alt="Черника">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Черника</h3>
 								<p class="product-description style-p2">Крем-брюле с&nbsp;черничным джемом</p>
@@ -340,7 +340,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Blackberry-product-list.png" width="168" height="168" alt="Ежевика">
+							<img class="product-image" src="images/product-images/blackberry-product-list.png" width="168" height="168" alt="Ежевика">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Ежевика</h3>
 								<p class="product-description style-p2">Сливочное мороженое с ежевичным джемом</p>
@@ -357,7 +357,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Banana-product-list.png" width="168" height="168" alt="Банан">
+							<img class="product-image" src="images/product-images/banana-product-list.png" width="168" height="168" alt="Банан">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Банан</h3>
 								<p class="product-description style-p2">Сливочный пломбир с&nbsp;банановым вкусом</p>
@@ -374,7 +374,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Choco-product-list.png" width="168" height="168" alt="Лимон">
+							<img class="product-image" src="images/product-images/choco-product-list.png" width="168" height="168" alt="Лимон">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Шоколадка</h3>
 								<p class="product-description style-p2">Классический шоколадный пломбир</p>
@@ -391,7 +391,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Strawberry-product-list.png" width="168" height="168" alt="Клубничка">
+							<img class="product-image" src="images/product-images/strawberry-product-list.png" width="168" height="168" alt="Клубничка">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Клубничка</h3>
 								<p class="product-description style-p2">Сливочный пломбир с&nbsp;клубничным вкусом</p>
@@ -408,7 +408,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Lemon-product-list.png" width="168" height="168" alt="Лимон">
+							<img class="product-image" src="images/product-images/lemon-product-list.png" width="168" height="168" alt="Лимон">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Лимон</h3>
 								<p class="product-description style-p2">Освежающий лимонный сорбет</p>
@@ -442,7 +442,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Nut-product-list.png" width="168" height="168" alt="Орешек">
+							<img class="product-image" src="images/product-images/nut-product-list.png" width="168" height="168" alt="Орешек">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Орешек</h3>
 								<p class="product-description style-p2">Фисташковый пломбир с шоколадным сиропом</p>
@@ -459,7 +459,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Cream-product-list.png" width="168" height="168" alt="Крем-брюле">
+							<img class="product-image" src="images/product-images/cream-product-list.png" width="168" height="168" alt="Крем-брюле">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Крем-брюле</h3>
 								<p class="product-description style-p2">Классическое крем-брюле</p>

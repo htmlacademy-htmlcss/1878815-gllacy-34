@@ -6,10 +6,10 @@
 		<title>Glacy Shop. Интернет-магазин мороженного Глейси</title>
 		<meta name="description" content="Интернет-магазин натурального мороженого от производителя">
 		<meta name="keywords" content="мороженое заказать онлайн, мороженое с доставкой, мороженое оптом">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="/styles/styles.css">
 		<link rel="icon" href="favicon.ico"><!-- 32×32 -->
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/Favicon-32.png">
-		<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/Favicon-152.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/favicon-152.png">
 		<link rel="manifest" href="manifest.webmanifest">
 	</head>
 
@@ -19,7 +19,7 @@
 			<nav class="navigation">
 				<a class="nav-link logo" href="index.html">
 					<span class="visually-hidden">Главная страница.</span>
-					<img src="images/logos/Logo.svg" alt="Главная" width="137" height="56">
+					<img src="images/logos/logo.svg" alt="Главная" width="137" height="56">
 				</a>
 				<div class="nav-lists">
           <!-- Navigation bar left -->
@@ -55,8 +55,8 @@
 					</ul>
           <!-- Navigation bar right -->
 					<ul class="nav-list nav-right style-c1">
-						<li class="nav-item nav-phone">
-							<a class="nav-link nav-phone style-pb" href="tel:+78005558628">+7 800 555-86-28</a>
+						<li class="nav-item">
+							<a class="nav-link style-pb tel" href="tel:+78005558628">+7 800 555-86-28</a>
 						</li>
 						<li class="nav-item btn-style">
 							<a class="nav-link-user search-link" href="#">
@@ -87,9 +87,9 @@
 									<fieldset class="login-form-fieldset">
 										<label class="login-email visually-hidden" for="login-email-field">Имейл.</label>
                     <!-- Add 'error' class to <input class="field"> if entered value is invalid-->
-										<input class="login-email-field field" type="email" id="login-email-field" placeholder="email@example.com" required>
+										<input class="login-email-field field" type="email" name="user-email" id="login-email-field" placeholder="email@example.com" required>
 										<label for="login-password-field" class="login-password visually-hidden">Пароль.</label>
-										<input class="login-password-field field" type="password" id="login-password-field" placeholder="Пароль" required>
+										<input class="login-password-field field" type="password" name="user-password" id="login-password-field" placeholder="Пароль" required>
 									</fieldset>
 									<button class="btn btn-pink login-btn" type="submit">Войти</button>
 									<div class="login-links">
@@ -111,7 +111,7 @@
 								<p class="style-h3 cart-h">Корзина</p>
 								<ul class="cart-product-list">
 									<li class="cart-product-item">
-										<img class="cart-product-image" src="images/product-images/Raspberry-product-list.png" width="46" height="46" alt="Малинка">
+										<img class="cart-product-image" src="images/product-images/raspberry-product-list.png" width="46" height="46" alt="Малинка">
 										<div class="cart-name-quantity">
 											<p class="cart-name style-h5">Малинка</p>
 											<p class="cart-quantity-price style-c1"><span class="cart-quantity">1 кг</span> х <span class="cart-price">310 &#8381;</span></p>
@@ -120,7 +120,7 @@
 										<button class="cart-delete" type="button"><span class="visually-hidden">Удалить из корзины.</span></button>
 									</li>
 									<li class="cart-product-item">
-										<img class="cart-product-image" src="iimages/product-images/Bubble-gum-product-list.png" width="46" height="46" alt="Бабл-гам">
+										<img class="cart-product-image" src="images/product-images/bubble-gum-product-list.png" width="46" height="46" alt="Бабл-гам">
 										<div class="cart-name-quantity">
 											<p class="cart-name style-h5">Бабл-гам</p>
 											<p class="cart-quantity-price style-c1"><span class="cart-quantity">1,5 кг</span> х <span class="cart-price">480 &#8381;</span></p>
@@ -130,7 +130,7 @@
 									</li>
 								</ul>
 								<div class="cart-btn-total">
-									<button class="btn btn-pink cart-btn" type="submit">Оформить заказ</button>
+									<a class="btn btn-pink cart-btn" href="#">Оформить заказ</a>
 									<p class="cart-total style-h5">Итого: 790 &#8381;</p>
 								</div>
 							</div>
@@ -161,7 +161,7 @@
 					</div>
 					<ul class="slide-images">
 						<li class="slide-image current">
-							<img src="images/slider-images/Sreawberry-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
+							<img src="images/slider-images/srawberry-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
 							<div class="slider-buttons">
 								<button class="slider-btn prev" type="button">
 									<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -178,10 +178,10 @@
 							</div>
 						</li>
 						<li class="slide-image">
-							<img src="images/slider-images/Banana-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
+							<img src="images/slider-images/banana-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
 						</li>
 						<li class="slide-image">
-							<img src="images/slider-images/Caramel-slider-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
+							<img src="images/slider-images/caramel-slider-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 						</li>
 					</ul>
 				</div>
@@ -193,7 +193,7 @@
 					</div>
 					<ul class="slide-images">
 						<li class="slide-image current slide-2">
-							<img src="images/slider-images/Banana-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
+							<img src="images/slider-images/banana-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
 							<div class="slider-buttons">
 								<button class="slider-btn prev" type="button">
 									<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -210,10 +210,10 @@
 							</div>
 						</li>
 						<li class="slide-image slide-2">
-							<img src="images/slider-images/Caramel-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
+							<img src="images/slider-images/caramel-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
 						</li>
 						<li class="slide-image slide-2">
-							<img src="images/slider-images/Strawberry-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
+							<img src="images/slider-images/strawberry-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 						</li>
 					</ul>
 				</div>
@@ -225,9 +225,9 @@
 					</div>
 					<ul class="slide-images">
 						<li class="slide-image current slide-3">
-							<img src="images/slider-images/Caramel-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
+							<img src="images/slider-images/caramel-slider.png" width="306" height="507" alt="Пломбир с клубничным джемом">
 							<div class="slider-buttons">
-								<button class="slider-btn prev">
+								<button class="slider-btn prev" type="button">
 									<svg class="slider-btn-icon" width="7" height="14" aria-hidden="true" viewBox="1 -1 7 14" focusable="false" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"></path>
 									</svg>
@@ -242,10 +242,10 @@
 							</div>
 						</li>
 						<li class="slide-image slide-3">
-							<img src="images/slider-images/Strawberry-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
+							<img src="images/slider-images/strawberry-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
 						</li>
 						<li class="slide-image slide-3">
-							<img src="images/slider-images/Banana-slider-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
+							<img src="images/slider-images/banana-slider-2.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 						</li>
 					</ul>
 				</div>
@@ -307,7 +307,7 @@
 				<ul class="product-list">
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Raspberry-product-list.png" width="168" height="168" alt="Малинка">
+							<img class="product-image" src="images/product-images/raspberry-product-list.png" width="168" height="168" alt="Малинка">
 							<div class="product-info">
 									<h3 class="product-name style-h4">Малинка</h3>
 									<p class="product-description style-p2">Сливочное мороженое с малиновым джемом</p>
@@ -324,7 +324,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Pistachio-product-list.png" width="168" height="168" alt="Фисташка">
+							<img class="product-image" src="images/product-images/pistachio-product-list.png" width="168" height="168" alt="Фисташка">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Фисташка</h3>
 								<p class="product-description style-p2">Фисташковый пломбир с кусочками шоколада</p>
@@ -341,7 +341,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Blueberry-product-list.png" width="168" height="168" alt="Черника">
+							<img class="product-image" src="images/product-images/blueberry-product-list.png" width="168" height="168" alt="Черника">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Черника</h3>
 								<p class="product-description style-p2">Крем-брюле с&nbsp;черничным джемом</p>
@@ -358,7 +358,7 @@
 					</li>
 					<li class="product-list-item">
 						<a class="product-link" href="#">
-							<img class="product-image" src="images/product-images/Bubble-gum-product-list.png" width="168" height="168" alt="Бабл-гам">
+							<img class="product-image" src="images/product-images/bubble-gum-product-list.png" width="168" height="168" alt="Бабл-гам">
 							<div class="product-info">
 								<h3 class="product-name style-h4">Бабл-гам</h3>
 								<p class="product-description style-p2">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
@@ -457,7 +457,7 @@
 										<span class="tooltip-text style-c2" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
 									</span>
 								</span>
-								<input class="field" type="text" id="delivery-address" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" required>
+								<input class="field" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
 							</div>
 						</fieldset>
 						<button class="btn-pink btn delivery-btn" type="submit">Отправить</button>
@@ -471,7 +471,7 @@
 					<p class="style-p2 address-office">Адрес главного офиса<br>и офлайн-магазина:</p>
 					<b class="style-h4">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</b>
 						<p class="style-p2 tel-c1">Для заказов по телефону:</p>
-						<a class="style-h4" href="tel:+78128121212">+7 (812) 812-12-12</a>
+						<a class="style-h4 tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
 						<p class="style-c1 tel-c2">(с 10 до 20 ежедневно)</p>
 					<a class="feedback-btn btn btn-pink" href="#">Форма обратной связи</a>
 			</address>
