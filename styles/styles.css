@@ -654,7 +654,7 @@ div.field-label {
   box-sizing: border-box;
   border: none;
   background: #fcfcfc;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url("/images/icons/cross-grey.svg");
   width: 16px;
   height: 16px;
   right: 32px;
@@ -1128,11 +1128,11 @@ div.field-label {
 }
 
 .gift-raspberry {
-  background-image: url("/images/backgrounds/raspberry-gift.png");
+  background-image: url("/images/backgrounds/raspberry-bonus.png");
 }
 
 .gift-marshmallow {
-  background-image: url("/images/backgrounds/marshmallow-gift.png");
+  background-image: url("/images/backgrounds/marshmallow-bonus.png");
 }
 
 /* Product list */
@@ -2144,7 +2144,7 @@ form.filters {
   left: 12px;
   width: 16px;
   height: 16px;
-  background-image: url("/images/icons/heart-fill.svg");
+  background-image: url("/images/icons/heart-grey.svg");
   background-repeat: no-repeat;
 }
 
@@ -2162,7 +2162,7 @@ form.filters {
   left: 12px;
   width: 16px;
   height: 16px;
-  background-image: url("/images/icons/heart-fill-white.svg");
+  background-image: url("/images/icons/heart-white.svg");
   background-repeat: no-repeat;
 }
 
